@@ -2,6 +2,8 @@ package resource;
 import java.util.ArrayList;
 
 import javax.swing.*;
+import javax.swing.event.TableModelEvent;
+import javax.swing.event.TableModelListener;
 import javax.swing.table.DefaultTableModel;
 public class Model extends DefaultTableModel implements TablaModel {
     private DataSetMunicipios dataset;
@@ -9,6 +11,15 @@ public class Model extends DefaultTableModel implements TablaModel {
     public Model(Object[][] data, Object[] row, DataSetMunicipios dataset){
         super(data, row);
         this.dataset = dataset;
+
+        addTableModelListener(new TableModelListener() {
+
+            @Override
+            public void tableChanged(TableModelEvent e) {
+                System.out.println("Ha cambiado la table UwU");
+            }
+            
+        });
     }
 
     @Override
@@ -18,8 +29,7 @@ public class Model extends DefaultTableModel implements TablaModel {
     }
     @Override
     public int getColumCount() {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'getColumCount'");
+        return super.getColumnCount();
     }
     @Override
     public String getColumName() {
@@ -69,10 +79,29 @@ public class Model extends DefaultTableModel implements TablaModel {
         // TODO Auto-generated method stub
         throw new UnsupportedOperationException("Unimplemented method 'removeTablaModelListener'");
     }
-
     public void removeRow (int i){
         super.removeRow(i);
         ArrayList<Municipio> arratMunicipios = (ArrayList<Municipio>) dataset.getListaMunicipios();
         arratMunicipios.remove(i-1);
+    }
+    public void removePackRow (int[] i,int ini){
+        super.removeRow(i[ini]);
+        if(i[ini] == i[i.length-1]){return;}
+        for (int k = ini+1; k < i.length; k++){
+
+            if (i[k] > i[ini]){i[k]--;}
+
+        }
+        removePackRow(i, ini++);
+    }
+    public void removePackRow (int[] i){
+        super.removeRow(i[0]);
+        if(i[0] == i[i.length-1]){return;}
+        for (int k = 0+1; k < i.length; k++){
+
+            if (i[k] > i[0]){i[k]--;}
+
+        }
+        removePackRow(i, 1);
     }
 }

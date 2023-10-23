@@ -35,9 +35,9 @@ public class Ejercicio06_03 {
 		ventana.setVisible(false);
 		try {
 			dataset = new DataSetMunicipios( "municipios200k.txt" );
-			System.out.println( "Cargados municipios:" );
+			//System.out.println( "Cargados municipios:" );
 			for (Municipio m : dataset.getListaMunicipios() ) {
-				System.out.println( "\t" + m );
+				//System.out.println( "\t" + m );
 			}
 			new VentanaTablaDatos(dataset, ventana);
 			// TODO Resolver el ejercicio 6.3

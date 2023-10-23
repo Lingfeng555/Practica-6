@@ -1,20 +1,30 @@
 package resource;
 
 import java.awt.BorderLayout;
+import java.awt.Component;
 import java.awt.FlowLayout;
+import java.awt.PageAttributes.OrientationRequestedType;
+import java.awt.event.MouseEvent;
+import java.awt.event.MouseListener;
 import java.awt.event.WindowEvent;
 import java.awt.event.WindowListener;
 import java.awt.event.WindowStateListener;
 import java.util.ArrayList;
+import java.util.Arrays;
 
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JMenuBar;
 import javax.swing.JPanel;
+import javax.swing.JProgressBar;
 import javax.swing.JScrollBar;
 import javax.swing.JScrollPane;
 import javax.swing.JTable;
+import javax.swing.SwingConstants;
 import javax.swing.border.Border;
+import javax.swing.event.CellEditorListener;
+import javax.swing.event.ChangeEvent;
+import javax.swing.table.TableCellRenderer;
 
 public class VentanaTablaDatos extends JFrame{
     private JScrollPane scrollPane;
@@ -99,13 +109,8 @@ public class VentanaTablaDatos extends JFrame{
     }
 
     private void borrar() {
-        int [] indexes = table.getSelectedRows().clone();
-        for (int i: indexes){
-            for (int j = 0; j <5; j++){
-                System.out.println(indexes);
-                table.setValueAt(null, i, j);
-            }
-        }
+        int[] indexes = table.getSelectedRows().clone();
+        model.removePackRow(indexes);
     }
 
     private JButton setAnadirButton(){
@@ -116,7 +121,7 @@ public class VentanaTablaDatos extends JFrame{
     }
 
     private void anadir() {
-        System.out.println("patata");
+        model.addRow(new Object[model.getColumCount()]);
     }
 
     private JTable setTable(DataSetMunicipios municipios){
@@ -124,6 +129,23 @@ public class VentanaTablaDatos extends JFrame{
         table = new JTable(model);
         table.getColumnModel().getColumn(0).setMaxWidth(50);
         table.getColumnModel().getColumn(2).setMaxWidth(150);
+
+        table.getColumnModel().getColumn(2).setCellRenderer(new TableCellRenderer() {
+
+            @Override
+            public Component getTableCellRendererComponent(JTable table, Object value, boolean isSelected,
+                    boolean hasFocus, int row, int column) {
+                JProgressBar progressBar = new JProgressBar(0, 5000000);
+                try{
+                    progressBar.setValue((Integer)value);  //Al inicio ya ha sido casteado de int a Objeto
+                }catch(java.lang.ClassCastException e){
+                    progressBar.setValue(Integer.parseInt((String)value));  //Cuando lo modificas swing lo toma como string y si salta el error es por eso
+                }
+                progressBar.setToolTipText(String.valueOf(progressBar.getValue()));
+                return progressBar;
+            }
+            
+        });
         return table;
     }
 }
