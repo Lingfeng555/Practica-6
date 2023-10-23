@@ -69,6 +69,16 @@ public class Municipio {
 		return "[" + codigo + "] " + nombre + ", " + habitantes + " en " + provincia + " (" + autonomia + ")";
 	}
 
-	
+	public boolean isEmpty(){
+		if(
+			habitantes == 0 &&
+			provincia == null &&
+			autonomia == null &&
+			nombre == null &&
+			codigo == 0
+			)
+			{return true;}
+		return false;
+	}
 	
 }

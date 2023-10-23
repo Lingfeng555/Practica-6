@@ -19,9 +19,11 @@ import javax.swing.border.Border;
 public class VentanaTablaDatos extends JFrame{
     private JScrollPane scrollPane;
     private JTable table;
+
+    private Model model;
+
     private JButton anadir;
     private JButton borrar;
-    private JButton modificar;
     private JFrame ventanaCarga;
 
     public VentanaTablaDatos (DataSetMunicipios municipios, JFrame ventanaCarga){
@@ -73,9 +75,21 @@ public class VentanaTablaDatos extends JFrame{
         });
     }
 
-    private void close() {
-        ventanaCarga.setVisible(true);;
+    private void setModel(DataSetMunicipios municipios){
+        Object[] fields = {"ID", "Municipio", "Poblacion", "Provincia", "Comunidad Autonoma"};
+        ArrayList<Municipio> arrayMunicipios = new ArrayList<>(municipios.getListaMunicipios());
+        Object[][] lMunicipios = new Object[arrayMunicipios.size()][5];
+        for (int i = 0; i<arrayMunicipios.size(); i++){
+            lMunicipios[i][0] = arrayMunicipios.get(i).getCodigo();
+            lMunicipios[i][1] = arrayMunicipios.get(i).getNombre();
+            lMunicipios[i][2] = arrayMunicipios.get(i).getHabitantes();
+            lMunicipios[i][3] = arrayMunicipios.get(i).getProvincia();
+            lMunicipios[i][4] = arrayMunicipios.get(i).getAutonomia();
+        }
+        this.model = new Model(lMunicipios, fields, municipios);
     }
+
+    private void close() {ventanaCarga.setVisible(true);}
     
     private JButton setBorrarButton(){
         borrar = new JButton("borrar");
@@ -106,17 +120,8 @@ public class VentanaTablaDatos extends JFrame{
     }
 
     private JTable setTable(DataSetMunicipios municipios){
-        Object[] fields = {"ID", "Municipio", "Poblacion", "Provincia", "Comunidad Autonoma"};
-        ArrayList<Municipio> arrayMunicipios = new ArrayList<>(municipios.getListaMunicipios());
-        Object[][] lMunicipios = new Object[arrayMunicipios.size()][5];
-        for (int i = 0; i<arrayMunicipios.size(); i++){
-            lMunicipios[i][0] = arrayMunicipios.get(i).getCodigo();
-            lMunicipios[i][1] = arrayMunicipios.get(i).getNombre();
-            lMunicipios[i][2] = arrayMunicipios.get(i).getHabitantes();
-            lMunicipios[i][3] = arrayMunicipios.get(i).getProvincia();
-            lMunicipios[i][4] = arrayMunicipios.get(i).getAutonomia();
-        }
-        table = new Tabla(lMunicipios, fields);
+        setModel(municipios);
+        table = new JTable(model);
         table.getColumnModel().getColumn(0).setMaxWidth(50);
         table.getColumnModel().getColumn(2).setMaxWidth(150);
         return table;

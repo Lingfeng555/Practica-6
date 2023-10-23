@@ -5,7 +5,7 @@ public interface TablaModel {
     int getColumCount();
     int getRowCount();
     String getColumName();
-    Object getValueAt();
+    Object getValueAt(int i, int j);
     boolean isCellEditable();
     void setValueAt();
     void removeTablaModelListener();
