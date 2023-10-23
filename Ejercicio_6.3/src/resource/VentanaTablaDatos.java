@@ -1,6 +1,7 @@
 package resource;
 
 import java.awt.BorderLayout;
+import java.awt.Color;
 import java.awt.Component;
 import java.awt.FlowLayout;
 import java.awt.PageAttributes.OrientationRequestedType;
@@ -9,11 +10,14 @@ import java.awt.event.MouseListener;
 import java.awt.event.WindowEvent;
 import java.awt.event.WindowListener;
 import java.awt.event.WindowStateListener;
+import java.beans.PropertyChangeEvent;
+import java.beans.PropertyChangeListener;
 import java.util.ArrayList;
 import java.util.Arrays;
 
 import javax.swing.JButton;
 import javax.swing.JFrame;
+import javax.swing.JLabel;
 import javax.swing.JMenuBar;
 import javax.swing.JPanel;
 import javax.swing.JProgressBar;
@@ -24,6 +28,9 @@ import javax.swing.SwingConstants;
 import javax.swing.border.Border;
 import javax.swing.event.CellEditorListener;
 import javax.swing.event.ChangeEvent;
+import javax.swing.event.TableColumnModelListener;
+import javax.swing.table.DefaultTableCellRenderer;
+import javax.swing.table.TableCellEditor;
 import javax.swing.table.TableCellRenderer;
 
 public class VentanaTablaDatos extends JFrame{
@@ -129,7 +136,6 @@ public class VentanaTablaDatos extends JFrame{
         table = new JTable(model);
         table.getColumnModel().getColumn(0).setMaxWidth(50);
         table.getColumnModel().getColumn(2).setMaxWidth(150);
-
         table.getColumnModel().getColumn(2).setCellRenderer(new TableCellRenderer() {
 
             @Override
@@ -142,10 +148,79 @@ public class VentanaTablaDatos extends JFrame{
                     progressBar.setValue(Integer.parseInt((String)value));  //Cuando lo modificas swing lo toma como string y si salta el error es por eso
                 }
                 progressBar.setToolTipText(String.valueOf(progressBar.getValue()));
+                progressBar.setString(String.valueOf(progressBar.getValue()));
+                progressBar.setStringPainted(true);
                 return progressBar;
             }
             
+        }); 
+
+        table.addMouseListener(new MouseListener() {
+
+            @Override
+            public void mouseClicked(MouseEvent e) {
+                int i = table.getSelectedRow();
+                int j = table.getSelectedColumn();
+                cleanColumn(j);
+                if(table.getColumnName(j).equalsIgnoreCase("Comunidad Autonoma")){
+                    changeColumn(j, (String)table.getValueAt(i, j));
+                }
+            }
+
+            @Override
+            public void mousePressed(MouseEvent e) {
+                return;
+            }
+
+            @Override
+            public void mouseReleased(MouseEvent e) {
+                return;
+            }
+
+            @Override
+            public void mouseEntered(MouseEvent e) {
+                return;
+            }
+
+            @Override
+            public void mouseExited(MouseEvent e) {
+                return;
+            }
+            
         });
+
         return table;
+    }
+
+    public void changeColumn(int column_index, String nombre){
+        System.out.println(nombre);
+        table.getColumnModel().getColumn(column_index).setCellRenderer(new DefaultTableCellRenderer() {
+            @Override
+            public Component getTableCellRendererComponent(JTable table, Object value, boolean isSelected,
+                    boolean hasFocus, int row, int column) {
+                Component component = super.getTableCellRendererComponent(table, value, isSelected, hasFocus, row, column);
+                String comparator = (String)table.getValueAt(row, column);
+                if(nombre.equalsIgnoreCase(comparator)){
+                    component.setBackground(Color.cyan);
+                }else{
+                    component.setBackground(Color.WHITE);
+                }
+                return component;
+            }
+        });
+        table.repaint();
+    }
+
+    public void cleanColumn(int column_index){
+        table.getColumnModel().getColumn(column_index).setCellRenderer(new DefaultTableCellRenderer() {
+            @Override
+            public Component getTableCellRendererComponent(JTable table, Object value, boolean isSelected,
+                    boolean hasFocus, int row, int column) {
+                Component component = super.getTableCellRendererComponent(table, value, isSelected, hasFocus, row, column);
+                component.setBackground(Color.WHITE);
+                return component;
+            }
+        });
+        table.repaint();
     }
 }
