@@ -7,7 +7,7 @@ public class DataSetMunicipios {
 	
 	private static DataSetMunicipios dataSetMunicipios;
 	private List<Municipio> lMunicipios = new ArrayList<Municipio>();
-	private static Hashtable<String, Hashtable<String, Hashtable<String, Municipio>>> municipiosHashTable;
+	private static Hashtable<String, Hashtable<String, ArrayList<Municipio>>> municipiosHashTable;
 	
 	/** Crea un nuevo dataset de municipios, cargando los datos desde el fichero indicado
 	 * @param nombreFichero	Nombre de fichero o recurso en formato de texto. En cada línea debe incluir los datos de un municipio <br>
@@ -114,20 +114,20 @@ public class DataSetMunicipios {
 			municipiosHashTable.put(municipio.getAutonomia(), new Hashtable<>());
 		}
 		if(!municipiosHashTable.get(municipio.getAutonomia()).containsKey(municipio.getProvincia())){ //Miramos si hay hashmap de esa provincia dentro de esa autonomia
-			municipiosHashTable.get(municipio.getAutonomia()).put(municipio.getProvincia(), new Hashtable<>());
+			municipiosHashTable.get(municipio.getAutonomia()).put(municipio.getProvincia(), new ArrayList<>());
 		}
-		municipiosHashTable.get(municipio.getAutonomia()).get(municipio.getProvincia()).put(municipio.getNombre(), municipio);
+		municipiosHashTable.get(municipio.getAutonomia()).get(municipio.getProvincia()).add(municipio);
 	}
 	
-	public Hashtable<String, Hashtable<String, Hashtable<String, Municipio>>> getmunicipiosHashTable(){
+	public Hashtable<String, Hashtable<String, ArrayList<Municipio>>> getmunicipiosHashTable(){
 		return municipiosHashTable;
 	}
 
-	public Hashtable<String, Hashtable<String, Municipio>> getAutonomiaHasTable(String autonomia){
+	public Hashtable<String, ArrayList<Municipio>> getAutonomiaHasTable(String autonomia){
 		return municipiosHashTable.get(autonomia);
 	}
 
-	public Hashtable<String, Municipio> getProvinciaHashTable(String autonomia, String provincia){
+	public ArrayList<Municipio> getProvinciaHashTable(String autonomia, String provincia){
 		return municipiosHashTable.get(autonomia).get(provincia);
 	}
 

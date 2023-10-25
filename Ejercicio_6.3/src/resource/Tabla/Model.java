@@ -20,7 +20,6 @@ public class Model extends DefaultTableModel implements TablaModel {
             public void tableChanged(TableModelEvent e) {
                 System.out.println("Ha cambiado la table UwU");
             }
-            
         });
     }
 

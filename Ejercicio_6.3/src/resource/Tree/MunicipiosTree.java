@@ -8,5 +8,6 @@ public class MunicipiosTree extends JTree {
 
     public MunicipiosTree (){
         super(DataSetMunicipios.getDataSetMunicipios().getmunicipiosHashTable());
+        this.setEditable(false);
     }
 }

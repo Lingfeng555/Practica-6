@@ -36,7 +36,8 @@ public class PanelTablaDatos extends JPanel{
         buttonPanel.add(setAnadirButton());
         buttonPanel.add(setBorrarButton());
         buttonPanel.add(setOrdenButton());
-        scrollPane = new JScrollPane(setTable(DataSetMunicipios.getDataSetMunicipios()));
+        setTable(DataSetMunicipios.getDataSetMunicipios());
+        scrollPane = new JScrollPane(table);
         
         this.add(buttonPanel, BorderLayout.SOUTH);
         this.add(scrollPane, BorderLayout.CENTER);
@@ -56,6 +57,19 @@ public class PanelTablaDatos extends JPanel{
             lMunicipios[i][4] = arrayMunicipios.get(i).getAutonomia();
         }
         this.model = new Model(lMunicipios, fields, municipios);
+    }
+
+        private void setModel(ArrayList<Municipio> arrayMunicipios){
+        Object[] fields = {"ID", "Municipio", "Poblacion", "Provincia", "Comunidad Autonoma"};
+        Object[][] lMunicipios = new Object[arrayMunicipios.size()][5];
+        for (int i = 0; i<arrayMunicipios.size(); i++){
+            lMunicipios[i][0] = arrayMunicipios.get(i).getCodigo();
+            lMunicipios[i][1] = arrayMunicipios.get(i).getNombre();
+            lMunicipios[i][2] = arrayMunicipios.get(i).getHabitantes();
+            lMunicipios[i][3] = arrayMunicipios.get(i).getProvincia();
+            lMunicipios[i][4] = arrayMunicipios.get(i).getAutonomia();
+        }
+        this.model = new Model(lMunicipios, fields, DataSetMunicipios.getDataSetMunicipios());
     }
     
     private JButton setBorrarButton(){
@@ -145,6 +159,10 @@ public class PanelTablaDatos extends JPanel{
         });
 
         return table;
+    }
+
+    private void setTableMunicipios(ArrayList<Municipio> municipios){
+        setModel(municipios);
     }
 
     public void changeColumn(int column_index, String nombre){
