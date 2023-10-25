@@ -15,16 +15,18 @@ public class DataSetMunicipios {
 	public DataSetMunicipios( String nombreFichero ) throws IOException {
 		File ficMunicipios = new File( nombreFichero );
 		Scanner lecturaFic = null;
+
 		if (ficMunicipios.exists()) {
 			lecturaFic = new Scanner( ficMunicipios );
 		} else {
 			lecturaFic = new Scanner( DataSetMunicipios.class.getResourceAsStream( nombreFichero ) );
 		}
+
 		int numLinea = 0;
 		while (lecturaFic.hasNextLine()) {
 			numLinea++;
 			String linea = lecturaFic.nextLine();
-			String[] partes = linea.split( "\t" );
+			String[] partes = linea.split( "," );
 			try {
 				int codigo = Integer.parseInt( partes[0] );
 				String nombre = partes[1];
@@ -37,6 +39,7 @@ public class DataSetMunicipios {
 				System.err.println( "Error en lectura de línea " + numLinea );
 			}
 		}
+		
 	}
 	
 	/** Devuelve la lista de municipios
