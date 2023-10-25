@@ -1,9 +1,10 @@
-package resource;
+package resource.Tabla;
 
 import java.awt.BorderLayout;
 import java.awt.Color;
 import java.awt.Component;
 import java.awt.FlowLayout;
+import java.awt.Panel;
 import java.awt.PageAttributes.OrientationRequestedType;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
@@ -33,66 +34,30 @@ import javax.swing.table.DefaultTableCellRenderer;
 import javax.swing.table.TableCellEditor;
 import javax.swing.table.TableCellRenderer;
 
-public class VentanaTablaDatos extends JFrame{
+import resource.DataSet.DataSetMunicipios;
+import resource.DataSet.Municipio;
+
+public class PanelTablaDatos extends JPanel{
     
     private JScrollPane scrollPane;
     private JTable table;
-
     private Model model;
-
     private JButton anadir;
     private JButton borrar;
-    private JFrame ventanaCarga;
 
-    public VentanaTablaDatos (DataSetMunicipios municipios, JFrame ventanaCarga){
-        this.setDefaultCloseOperation(EXIT_ON_CLOSE);
+    public PanelTablaDatos (){
 
         this.setLayout(new BorderLayout());
-        this.setSize(600, 600);
-        this.setTitle("CRUD MUNICIPIOS");
-        
-        this.ventanaCarga = ventanaCarga;
 
         JPanel buttonPanel = new JPanel(new FlowLayout());
         buttonPanel.add(setAnadirButton());
         buttonPanel.add(setBorrarButton());
-        scrollPane = new JScrollPane(setTable(municipios));
+        scrollPane = new JScrollPane(setTable(DataSetMunicipios.getDataSetMunicipios()));
         
         this.add(buttonPanel, BorderLayout.SOUTH);
         this.add(scrollPane, BorderLayout.CENTER);
 
         this.setVisible(true);
-
-        this.addWindowListener(new WindowListener() {
-            @Override
-            public void windowClosed(WindowEvent e) {
-            }
-
-            @Override
-            public void windowOpened(WindowEvent e) {
-            }
-
-            @Override
-            public void windowClosing(WindowEvent e) {
-                close();
-            }
-
-            @Override
-            public void windowIconified(WindowEvent e) {
-            }
-
-            @Override
-            public void windowDeiconified(WindowEvent e) {
-            }
-
-            @Override
-            public void windowActivated(WindowEvent e) {
-            }
-
-            @Override
-            public void windowDeactivated(WindowEvent e) {
-            }
-        });
     }
 
     private void setModel(DataSetMunicipios municipios){
@@ -107,10 +72,6 @@ public class VentanaTablaDatos extends JFrame{
             lMunicipios[i][4] = arrayMunicipios.get(i).getAutonomia();
         }
         this.model = new Model(lMunicipios, fields, municipios);
-    }
-
-    private void close() {
-        ventanaCarga.setVisible(true);
     }
     
     private JButton setBorrarButton(){

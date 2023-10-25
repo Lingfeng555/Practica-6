@@ -1,4 +1,4 @@
-package resource;
+package resource.DataSet;
 /** Permite crear objetos municipio con información de población, provincia y comunidad autónoma
  */
 public class Municipio {

@@ -1,10 +1,13 @@
-package resource;
+package resource.Tabla;
 import java.util.ArrayList;
 
 import javax.swing.*;
 import javax.swing.event.TableModelEvent;
 import javax.swing.event.TableModelListener;
 import javax.swing.table.DefaultTableModel;
+
+import resource.DataSet.DataSetMunicipios;
+import resource.DataSet.Municipio;
 public class Model extends DefaultTableModel implements TablaModel {
     private DataSetMunicipios dataset;
 

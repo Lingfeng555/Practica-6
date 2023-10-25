@@ -6,9 +6,8 @@ import java.io.IOException;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 
-import resource.DataSetMunicipios;
-import resource.Municipio;
-import resource.VentanaTablaDatos;
+import resource.VentanaTree;
+import resource.DataSet.DataSetMunicipios;
 
 public class Ejercicio06_03 {
 	
@@ -35,11 +34,7 @@ public class Ejercicio06_03 {
 		ventana.setVisible(false);
 		try {
 			dataset = new DataSetMunicipios( "Ejercicio_6.3/src/Datos/DatosMunicipios.csv" );
-			//System.out.println( "Cargados municipios:" );
-			for (Municipio m : dataset.getListaMunicipios() ) {
-				//System.out.println( "\t" + m );
-			}
-			new VentanaTablaDatos(dataset, ventana);
+			new VentanaTree();
 			// TODO Resolver el ejercicio 6.3
 		} catch (IOException e) {
 			System.err.println( "Error en carga de municipios" );

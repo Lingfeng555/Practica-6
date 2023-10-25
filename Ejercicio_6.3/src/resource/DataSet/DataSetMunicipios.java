@@ -1,12 +1,13 @@
-package resource;
+package resource.DataSet;
 
 import java.io.*;
 import java.util.*;
 
 public class DataSetMunicipios {
 	
+	private static DataSetMunicipios dataSetMunicipios;
 	private List<Municipio> lMunicipios = new ArrayList<Municipio>();
-	HashMap<String, HashMap<String, HashMap<String, Municipio>>> municipiosHashMap;
+	private static Hashtable<String, Hashtable<String, Hashtable<String, Municipio>>> municipiosHashTable;
 	
 	/** Crea un nuevo dataset de municipios, cargando los datos desde el fichero indicado
 	 * @param nombreFichero	Nombre de fichero o recurso en formato de texto. En cada línea debe incluir los datos de un municipio <br>
@@ -15,10 +16,11 @@ public class DataSetMunicipios {
 	 */
 	public DataSetMunicipios( String nombreFichero ) throws IOException {
 
-		municipiosHashMap = new HashMap<>();
+		municipiosHashTable = new Hashtable<>();
 		File ficMunicipios = new File( nombreFichero );
 		loadDataSet(ficMunicipios);
-		//System.out.println(removeSpaces("65 45"));
+		//System.out.println(municipiosHashMap);
+		dataSetMunicipios = this;
 	}
 	
 	/** Devuelve la lista de municipios
@@ -46,7 +48,7 @@ public class DataSetMunicipios {
 	/** Quita un municipio
 	 * @param codigoMuni	Código del municipio a eliminar
 	 */
-	public void quitar( String codigoMuni ) {
+	public void quitar( int codigoMuni ) {
 		for (int i=0; i<lMunicipios.size(); i++) {
 			if (lMunicipios.get(i).getCodigo() == codigoMuni) {
 				lMunicipios.remove(i);
@@ -108,12 +110,28 @@ public class DataSetMunicipios {
 	}
 
 	private void addToHashMap(Municipio municipio){
-		if(!municipiosHashMap.containsKey(municipio.getAutonomia())){ //Miramos si hay hashmap de esa Autonomia
-			municipiosHashMap.put(municipio.getAutonomia(), new HashMap<>());
+		if(!municipiosHashTable.containsKey(municipio.getAutonomia())){ //Miramos si hay hashmap de esa Autonomia
+			municipiosHashTable.put(municipio.getAutonomia(), new Hashtable<>());
 		}
-		if(!municipiosHashMap.get(municipio.getAutonomia()).containsKey(municipio.getProvincia())){ //Miramos si hay hashmap de esa provincia dentro de esa autonomia
-			municipiosHashMap.get(municipio.getAutonomia()).put(municipio.getProvincia(), new HashMap<>());
+		if(!municipiosHashTable.get(municipio.getAutonomia()).containsKey(municipio.getProvincia())){ //Miramos si hay hashmap de esa provincia dentro de esa autonomia
+			municipiosHashTable.get(municipio.getAutonomia()).put(municipio.getProvincia(), new Hashtable<>());
 		}
-		municipiosHashMap.get(municipio.getAutonomia()).get(municipio.getProvincia()).put(municipio.getNombre(), municipio);
+		municipiosHashTable.get(municipio.getAutonomia()).get(municipio.getProvincia()).put(municipio.getNombre(), municipio);
+	}
+	
+	public Hashtable<String, Hashtable<String, Hashtable<String, Municipio>>> getmunicipiosHashTable(){
+		return municipiosHashTable;
+	}
+
+	public Hashtable<String, Hashtable<String, Municipio>> getAutonomiaHasTable(String autonomia){
+		return municipiosHashTable.get(autonomia);
+	}
+
+	public Hashtable<String, Municipio> getProvinciaHashTable(String autonomia, String provincia){
+		return municipiosHashTable.get(autonomia).get(provincia);
+	}
+
+	public static DataSetMunicipios getDataSetMunicipios(){
+		return dataSetMunicipios;
 	}
 }

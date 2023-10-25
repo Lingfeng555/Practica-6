@@ -1,4 +1,4 @@
-package resource;
+package resource.Tabla;
 
 public interface TablaModel {
     Object getColumClass();
