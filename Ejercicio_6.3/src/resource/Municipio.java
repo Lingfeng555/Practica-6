@@ -80,5 +80,48 @@ public class Municipio {
 			{return true;}
 		return false;
 	}
+
+	@Override
+	public int hashCode() {
+		final int prime = 31;
+		int result = 1;
+		result = prime * result + codigo;
+		result = prime * result + ((nombre == null) ? 0 : nombre.hashCode());
+		result = prime * result + habitantes;
+		result = prime * result + ((provincia == null) ? 0 : provincia.hashCode());
+		result = prime * result + ((autonomia == null) ? 0 : autonomia.hashCode());
+		return result;
+	}
+
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj)
+			return true;
+		if (obj == null)
+			return false;
+		if (getClass() != obj.getClass())
+			return false;
+		Municipio other = (Municipio) obj;
+		if (codigo != other.codigo)
+			return false;
+		if (nombre == null) {
+			if (other.nombre != null)
+				return false;
+		} else if (!nombre.equals(other.nombre))
+			return false;
+		if (habitantes != other.habitantes)
+			return false;
+		if (provincia == null) {
+			if (other.provincia != null)
+				return false;
+		} else if (!provincia.equals(other.provincia))
+			return false;
+		if (autonomia == null) {
+			if (other.autonomia != null)
+				return false;
+		} else if (!autonomia.equals(other.autonomia))
+			return false;
+		return true;
+	}
 	
 }

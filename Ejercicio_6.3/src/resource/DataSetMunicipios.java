@@ -6,6 +6,7 @@ import java.util.*;
 public class DataSetMunicipios {
 	
 	private List<Municipio> lMunicipios = new ArrayList<Municipio>();
+	HashMap<String, HashMap<String, HashMap<String, Municipio>>> municipiosHashMap;
 	
 	/** Crea un nuevo dataset de municipios, cargando los datos desde el fichero indicado
 	 * @param nombreFichero	Nombre de fichero o recurso en formato de texto. En cada línea debe incluir los datos de un municipio <br>
@@ -13,33 +14,11 @@ public class DataSetMunicipios {
 	 * @throws IOException	Si hay error en la lectura del fichero
 	 */
 	public DataSetMunicipios( String nombreFichero ) throws IOException {
+
+		municipiosHashMap = new HashMap<>();
 		File ficMunicipios = new File( nombreFichero );
-		Scanner lecturaFic = null;
-
-		if (ficMunicipios.exists()) {
-			lecturaFic = new Scanner( ficMunicipios );
-		} else {
-			lecturaFic = new Scanner( DataSetMunicipios.class.getResourceAsStream( nombreFichero ) );
-		}
-
-		int numLinea = 0;
-		while (lecturaFic.hasNextLine()) {
-			numLinea++;
-			String linea = lecturaFic.nextLine();
-			String[] partes = linea.split( "," );
-			try {
-				int codigo = Integer.parseInt( partes[0] );
-				String nombre = partes[1];
-				int habitantes = Integer.parseInt( partes[2] );
-				String provincia = partes[3];
-				String comunidad = partes[4];
-				Municipio muni = new Municipio( codigo, nombre, habitantes, provincia, comunidad );
-				lMunicipios.add( muni );
-			} catch (IndexOutOfBoundsException | NumberFormatException e) {
-				System.err.println( "Error en lectura de línea " + numLinea );
-			}
-		}
-		
+		loadDataSet(ficMunicipios);
+		//System.out.println(removeSpaces("65 45"));
 	}
 	
 	/** Devuelve la lista de municipios
@@ -67,7 +46,7 @@ public class DataSetMunicipios {
 	/** Quita un municipio
 	 * @param codigoMuni	Código del municipio a eliminar
 	 */
-	public void quitar( int codigoMuni ) {
+	public void quitar( String codigoMuni ) {
 		for (int i=0; i<lMunicipios.size(); i++) {
 			if (lMunicipios.get(i).getCodigo() == codigoMuni) {
 				lMunicipios.remove(i);
@@ -76,4 +55,64 @@ public class DataSetMunicipios {
 		}
 	}
 	
+	/** Cargar un archivo de municipios
+	 * 
+	 */
+	private void loadDataSet(File file){
+		try {
+
+			BufferedReader reader = new BufferedReader(new FileReader(file));
+			String[] data;
+
+			while( (data = reader.readLine().split("\t")) != null ){
+
+				for(int i = 0; i < data.length; i++){
+					data[i] = removeSpaces(data[i]);
+				}
+
+				int codigo = 0;		
+				String muni = ""; 		
+				int poblacion = 0; 		
+				String provincia = ""; 		
+				String autonomia = ""; 	
+
+				try{
+					 codigo = Integer.valueOf(data[0]);
+					 muni = data[1];
+					 poblacion = Integer.valueOf(data[2]);
+					 provincia = data[3];
+					 autonomia = data[4];
+				}catch(java.lang.ArrayIndexOutOfBoundsException e){
+					autonomia = data[3];
+				}
+
+				Municipio municipio = new Municipio(codigo, muni, poblacion, provincia, autonomia);
+				lMunicipios.add(municipio);
+				
+			}
+
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+
+	private String removeSpaces(String str){
+		String result = "";
+		for (int i = 0; i < str.length(); i++){
+			if(str.charAt(i) != ' ' ){
+				result += str.charAt(i);
+			}
+		}
+		return result;
+	}
+
+	private void addToHashMap(Municipio municipio){
+		if(!municipiosHashMap.containsKey(municipio.getAutonomia())){ //Miramos si hay hashmap de esa Autonomia
+			municipiosHashMap.put(municipio.getAutonomia(), new HashMap<>());
+		}
+		if(!municipiosHashMap.get(municipio.getAutonomia()).containsKey(municipio.getProvincia())){ //Miramos si hay hashmap de esa provincia dentro de esa autonomia
+			municipiosHashMap.get(municipio.getAutonomia()).put(municipio.getProvincia(), new HashMap<>());
+		}
+		municipiosHashMap.get(municipio.getAutonomia()).get(municipio.getProvincia()).
+	}
 }

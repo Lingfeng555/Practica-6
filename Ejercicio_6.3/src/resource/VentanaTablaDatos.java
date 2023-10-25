@@ -34,6 +34,7 @@ import javax.swing.table.TableCellEditor;
 import javax.swing.table.TableCellRenderer;
 
 public class VentanaTablaDatos extends JFrame{
+    
     private JScrollPane scrollPane;
     private JTable table;
 
@@ -44,6 +45,8 @@ public class VentanaTablaDatos extends JFrame{
     private JFrame ventanaCarga;
 
     public VentanaTablaDatos (DataSetMunicipios municipios, JFrame ventanaCarga){
+        this.setDefaultCloseOperation(EXIT_ON_CLOSE);
+
         this.setLayout(new BorderLayout());
         this.setSize(600, 600);
         this.setTitle("CRUD MUNICIPIOS");
@@ -106,7 +109,9 @@ public class VentanaTablaDatos extends JFrame{
         this.model = new Model(lMunicipios, fields, municipios);
     }
 
-    private void close() {ventanaCarga.setVisible(true);}
+    private void close() {
+        ventanaCarga.setVisible(true);
+    }
     
     private JButton setBorrarButton(){
         borrar = new JButton("borrar");

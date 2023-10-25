@@ -19,7 +19,7 @@ public class Ejercicio06_03 {
 		ventana.setLocationRelativeTo( null );
 		ventana.setSize( 200, 80 );
 		ventana.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		JButton bCargaMunicipios = new JButton( "Carga municipios > 200k" );
+		JButton bCargaMunicipios = new JButton( "Carga municipios" );
 		ventana.add( bCargaMunicipios );
 		
 		bCargaMunicipios.addActionListener( new ActionListener() {
@@ -34,7 +34,7 @@ public class Ejercicio06_03 {
 	private static void cargaMunicipios() {
 		ventana.setVisible(false);
 		try {
-			dataset = new DataSetMunicipios( "municipios200k.txt" );
+			dataset = new DataSetMunicipios( "Ejercicio_6.3/src/Datos/DatosMunicipios.csv" );
 			//System.out.println( "Cargados municipios:" );
 			for (Municipio m : dataset.getListaMunicipios() ) {
 				//System.out.println( "\t" + m );

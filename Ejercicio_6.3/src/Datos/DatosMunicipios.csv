@@ -1,0 +1,1313 @@
+1	Madrid	3 286 662	 Madrid	 Comunidad de Madrid
+2	Barcelona	1 636 193	 Barcelona	 Cataluña
+3	Valencia	792 492	Valencia	 Comunidad Valenciana
+4	Zaragoza	694 109	 Zaragoza	 Aragón
+5	Sevilla	681 998	 Sevilla	 Andalucía
+6	Málaga	579 076	 Málaga	 Andalucía
+7	Murcia	462 979	 Región de Murcia
+8	Palma de Mallorca	415 940	 Islas Baleares
+9	Las Palmas de Gran Canaria	378 797	Las Palmas	 Canarias
+10	Bilbao	344 127	 Vizcaya	 País Vasco
+11	Alicante	338 577	Alicante	 Comunidad Valenciana
+12	Córdoba	319 515	 Córdoba	 Andalucía
+13	Valladolid	295 639	 Valladolid	 Castilla y León
+14	Vigo	292 374	 Pontevedra	 Galicia
+15	Gijón	267 706	 Principado de Asturias
+16	Hospitalet de Llobregat	265 444	 Barcelona	 Cataluña
+17	Vitoria	253 672	 Álava	 País Vasco
+18	La Coruña	244 700	La Coruña	 Galicia
+19	Elche	235 580	Alicante	 Comunidad Valenciana
+20	Granada	228 682	 Granada	 Andalucía
+21	Tarrasa	224 114	 Barcelona	 Cataluña
+22	Badalona	223 506	 Barcelona	 Cataluña
+23	Cartagena	216 961	 Región de Murcia
+24	Sabadell	215 760	 Barcelona	 Cataluña
+25	Oviedo	215 167	 Principado de Asturias
+26	Jerez de la Frontera	212 730	 Cádiz	 Andalucía
+27	Móstoles	208 761	 Comunidad de Madrid
+28	Santa Cruz de Tenerife	208 688	Santa Cruz de Tenerife	 Canarias
+29	Pamplona	203 418	 Navarra
+30	Almería	199 237	 Almería	 Andalucía
+31	Alcalá de Henares	196 888	 Comunidad de Madrid
+32	Fuenlabrada	189 891	 Comunidad de Madrid
+33	San Sebastián	187 849	 Guipúzcoa	 País Vasco
+34	Leganés	186 660	 Comunidad de Madrid
+35	Getafe	183 218	 Comunidad de Madrid
+36	Burgos	173 483	 Burgos	 Castilla y León
+37	Albacete	172 357	 Albacete	 Castilla-La Mancha
+38	Castellón de la Plana	171 857	Castellón	 Comunidad Valenciana
+39	Santander	171 693	 Cantabria
+40	Alcorcón	170 296	 Comunidad de Madrid
+41	San Cristóbal de La Laguna	157 815	Santa Cruz de Tenerife	 Canarias
+42	Marbella	150 725	 Málaga	 Andalucía
+43	Badajoz	150 146	 Badajoz	 Extremadura
+44	Logroño	150 020	 La Rioja
+45	Salamanca	142 412	 Salamanca	 Castilla y León
+46	Huelva	141 854	 Huelva	 Andalucía
+47	Lérida	140 797	Lérida	 Cataluña
+48	Dos Hermanas	137 561	 Sevilla	 Andalucía
+49	Tarragona	134 883	 Tarragona	 Cataluña
+50	Torrejón de Ardoz	134 733	 Comunidad de Madrid
+51	Parla	130 577	 Comunidad de Madrid
+52	Mataró	128 956	 Barcelona	 Cataluña
+53	Algeciras	122 368	 Cádiz	 Andalucía
+54	León	120 951	 León	 Castilla y León
+55	Santa Coloma de Gramanet	117 981	 Barcelona	 Cataluña
+56	Alcobendas	117 041	 Comunidad de Madrid
+57	Cádiz	113 066	 Cádiz	 Andalucía
+58	Jaén	111 669	 Jaén	 Andalucía
+59	Reus	106 741	 Tarragona	 Cataluña
+60	Orense	103 756	 Orense	 Galicia
+61	Roquetas de Mar	102 881	 Almería	 Andalucía
+62	Gerona	102 666	Gerona	 Cataluña
+63	Telde	102 472	Las Palmas	 Canarias
+64	Baracaldo	100 535	 Vizcaya	 País Vasco
+65	Santiago de Compostela	98 179	La Coruña	 Galicia
+66	Lugo	97 211	 Lugo	 Galicia
+67	Lorca	97 151	 Región de Murcia
+68	Rivas-Vaciamadrid	96 690	 Comunidad de Madrid
+69	Las Rozas de Madrid	95 725	 Comunidad de Madrid
+70	San Cugat del Vallés	95 725	 Barcelona	 Cataluña
+71	Cáceres	95 456	 Cáceres	 Extremadura
+72	San Fernando	94 120	 Cádiz	 Andalucía
+73	San Sebastián de los Reyes	91 083	 Comunidad de Madrid
+74	Mijas	89 502	 Málaga	 Andalucía
+75	El Puerto de Santa María	89 435	 Cádiz	 Andalucía
+76	Cornellá de Llobregat	89 039	 Barcelona	 Cataluña
+77	Pozuelo de Alarcón	87 728	 Comunidad de Madrid
+78	El Ejido	87 500	 Almería	 Andalucía
+79	Chiclana de la Frontera	87 493	 Cádiz	 Andalucía
+80	Guadalajara	87 452	 Guadalajara	 Castilla-La Mancha
+81	Melilla	85 170	 Melilla
+82	Torrente	85 142	Valencia	 Comunidad Valenciana
+83	Toledo	85 085	 Toledo	 Castilla-La Mancha
+84	Vélez-Málaga	83 899	 Málaga	 Andalucía
+85	Torrevieja	83 547	Alicante	 Comunidad Valenciana
+86	San Baudilio de Llobregat	83 371	 Barcelona	 Cataluña
+87	Talavera de la Reina	83 247	 Toledo	 Castilla-La Mancha
+88	Fuengirola	83 226	 Málaga	 Andalucía
+89	Ceuta	83 117	 Ceuta
+90	Arona	82 982	Santa Cruz de Tenerife	 Canarias
+91	Pontevedra	82 828	 Pontevedra	 Galicia
+92	Orihuela	80 784	Alicante	 Comunidad Valenciana
+93	Coslada	80 596	 Comunidad de Madrid
+94	Valdemoro	79 100	 Comunidad de Madrid
+95	Rubí	79 007	 Barcelona	 Cataluña
+96	Manresa	77 459	 Barcelona	 Cataluña
+97	Guecho	76 365	 Vizcaya	 País Vasco
+98	Palencia	76 302	 Palencia	 Castilla y León
+99	Alcalá de Guadaíra	75 917	 Sevilla	 Andalucía
+100	Gandía	75 911	Valencia	 Comunidad Valenciana
+101	Avilés	75 877	 Principado de Asturias
+102	Ciudad Real	74 850	 Ciudad Real	 Castilla-La Mancha
+103	Molina de Segura	74 762	 Región de Murcia
+104	Santa Lucía de Tirajana	74 560	Las Palmas	 Canarias
+105	Estepona	74 493	 Málaga	 Andalucía
+106	Benalmádena	73 160	 Málaga	 Andalucía
+107	Majadahonda	72 179	 Comunidad de Madrid
+108	Paterna	71 880	Valencia	 Comunidad Valenciana
+109	Benidorm	69 738	Alicante	 Comunidad Valenciana
+110	Sanlúcar de Barrameda	69 727	 Cádiz	 Andalucía
+111	Torremolinos	68 819	 Málaga	 Andalucía
+112	Villanueva y Geltrú	68 152	 Barcelona	 Cataluña
+113	Sagunto	68 066	Valencia	 Comunidad Valenciana
+114	Castelldefels	67 307	 Barcelona	 Cataluña
+115	Viladecans	66 720	 Barcelona	 Cataluña
+116	El Prat de Llobregat	65 030	 Barcelona	 Cataluña
+117	Collado Villalba	64 263	 Comunidad de Madrid
+118	Ferrol	64 158	La Coruña	 Galicia
+119	Arrecife	63 750	Las Palmas	 Canarias
+120	La Línea de la Concepción	63 271	 Cádiz	 Andalucía
+121	Ponferrada	63 052	 León	 Castilla y León
+122	Irún	62 635	 Guipúzcoa	 País Vasco
+123	Boadilla del Monte	62 627	 Comunidad de Madrid
+124	Granollers	62 475	 Barcelona	 Cataluña
+125	Aranjuez	59 762	 Comunidad de Madrid
+126	Zamora	59 475	Zamora	 Castilla y León
+127	Mérida	59 324	 Badajoz	 Extremadura
+128	San Vicente del Raspeig	59 138	Alicante	 Comunidad Valenciana
+129	Alcoy	58 960	Alicante	 Comunidad Valenciana
+130	Motril	58 798	 Granada	 Andalucía
+131	Ávila	57 730	 Ávila	 Castilla y León
+132	Arganda del Rey	57 553	 Comunidad de Madrid
+133	Sardañola del Vallés	57 291	 Barcelona	 Cataluña
+134	Linares	55 729	 Jaén	 Andalucía
+135	Pinto	54 088	 Comunidad de Madrid
+136	Cuenca	53 389	 Cuenca	 Castilla-La Mancha
+136	Colmenar Viejo	53 389	 Comunidad de Madrid
+138	Huesca	53 305	 Huesca	 Aragón
+139	San Bartolomé de Tirajana	52 936	Las Palmas	 Canarias
+140	Calviá	52 458	 Islas Baleares
+141	Granadilla de Abona	52 447	Santa Cruz de Tenerife	 Canarias
+142	Elda	52 297	Alicante	 Comunidad Valenciana
+143	Siero	51 792	 Principado de Asturias
+144	Utrera	51 402	 Sevilla	 Andalucía
+145	Villarreal	51 369	Castellón	 Comunidad Valenciana
+146	Mollet del Vallés	51 294	 Barcelona	 Cataluña
+147	Torrelavega	51 142	 Cantabria
+148	Segovia	50 802	 Segovia	 Castilla y León
+149	Ibiza	50 715	 Islas Baleares
+150	Rincón de la Victoria	50 569	 Málaga	 Andalucía
+151	Tres Cantos	50 187	 Comunidad de Madrid
+152	Adeje	49 270	Santa Cruz de Tenerife	 Canarias
+153	Vic	47 545	 Barcelona	 Cataluña
+154	Mairena del Aljarafe	47 161	 Sevilla	 Andalucía
+155	Figueras	47 088	Gerona	 Cataluña
+156	Gavá	46 974	 Barcelona	 Cataluña
+157	Esplugas de Llobregat	46 414	 Barcelona	 Cataluña
+158	Santurce	45 749	 Vizcaya	 País Vasco
+159	San Feliú de Llobregat	45 642	 Barcelona	 Cataluña
+160	Puertollano	45 539	 Ciudad Real	 Castilla-La Mancha
+161	Alcira	45 451	Valencia	 Comunidad Valenciana
+162	Manacor	45 352	 Islas Baleares
+163	Portugalete	44 800	 Vizcaya	 País Vasco
+164	Mislata	44 282	Valencia	 Comunidad Valenciana
+165	Denia	43 899	Alicante	 Comunidad Valenciana
+166	Lucena	42 645	 Córdoba	 Andalucía
+167	Alcantarilla	42 630	 Región de Murcia
+168	Alhaurín de la Torre	42 531	 Málaga	 Andalucía
+169	La Orotava	42 434	Santa Cruz de Tenerife	 Canarias
+170	Puerto del Rosario	42 024	Las Palmas	 Canarias
+171	Puerto Real	41 963	 Cádiz	 Andalucía
+172	Antequera	41 184	 Málaga	 Andalucía
+173	Igualada	40 767	 Barcelona	 Cataluña
+174	Blanes	40 579	Gerona	 Cataluña
+175	Santa Eulalia del Río	40 548	 Islas Baleares
+176	Basauri	40 324	 Vizcaya	 País Vasco
+177	Villafranca del Panadés	40 056	 Barcelona	 Cataluña
+178	Écija	39 743	 Sevilla	 Andalucía
+179	Soria	39 695	 Soria	 Castilla y León
+180	La Rinconada	39 509	 Sevilla	 Andalucía
+181	Plasencia	39 247	 Cáceres	 Extremadura
+182	Vendrell	39 072	 Tarragona	 Cataluña
+183	Ripollet	39 031	 Barcelona	 Cataluña
+184	Rentería	39 023	 Guipúzcoa	 País Vasco
+185	Lloret de Mar	38 941	Gerona	 Cataluña
+186	Narón	38 938	La Coruña	 Galicia
+187	San Fernando de Henares	38 904	 Comunidad de Madrid
+188	Marrachí	38 902	 Islas Baleares
+189	Burjasot	38 880	Valencia	 Comunidad Valenciana
+190	Lluchmayor	38 722	 Islas Baleares
+191	Los Palacios y Villafranca	38 662	 Sevilla	 Andalucía
+192	Arucas	38 369	Las Palmas	 Canarias
+193	Langreo	38 262	 Principado de Asturias
+194	Torre-Pacheco	38 140	 Región de Murcia
+195	Villagarcía de Arosa	37 677	 Pontevedra	 Galicia
+196	Don Benito	37 310	 Badajoz	 Extremadura
+197	Oleiros	37 271	La Coruña	 Galicia
+198	Tudela	37 247	 Navarra
+199	Los Realejos	37 076	Santa Cruz de Tenerife	 Canarias
+200	San Adrián de Besós	36 918	 Barcelona	 Cataluña
+201	Olot	36 716	Gerona	 Cataluña
+202	Moncada y Reixach	36 666	 Barcelona	 Cataluña
+203	Mieres	36 574	 Principado de Asturias
+204	Águilas	36 403	 Región de Murcia
+205	Teruel	36 240	 Teruel	 Aragón
+206	Santa Pola	36 174	Alicante	 Comunidad Valenciana
+207	Andújar	36 030	 Jaén	 Andalucía
+208	Tomelloso	36 024	 Ciudad Real	 Castilla-La Mancha
+209	Onteniente	35 946	Valencia	 Comunidad Valenciana
+210	Cambrils	35 675	 Tarragona	 Cataluña
+211	Cieza	35 298	 Región de Murcia
+212	Miranda de Ebro	35 239	 Burgos	 Castilla y León
+213	Yecla	35 234	 Región de Murcia
+214	Azuqueca de Henares	35 182	 Guadalajara	 Castilla-La Mancha
+215	Burriana	35 019	Castellón	 Comunidad Valenciana
+216	Galapagar	34 834	 Comunidad de Madrid
+217	Arroyomolinos	34 833	 Comunidad de Madrid
+218	Villajoyosa	34 828	Alicante	 Comunidad Valenciana
+219	Inca	34 093	 Islas Baleares
+220	Úbeda	34 062	 Jaén	 Andalucía
+221	San Juan Despí	34 039	 Barcelona	 Cataluña
+222	Petrel	33 978	Alicante	 Comunidad Valenciana
+223	Villena	33 969	Alicante	 Comunidad Valenciana
+224	Tortosa	33 890	 Tarragona	 Cataluña
+225	Mazarrón	33 700	 Región de Murcia
+226	Almendralejo	33 669	 Badajoz	 Extremadura
+227	San Javier	33 468	 Región de Murcia
+228	Ronda	33 401	 Málaga	 Andalucía
+229	Aranda de Duero	33 172	 Burgos	 Castilla y León
+230	Castro-Urdiales	33 109	 Cantabria
+231	Barberá del Vallés	33 082	 Barcelona	 Cataluña
+232	Arteijo	33 076	La Coruña	 Galicia
+233	San Roque	33 018	 Cádiz	 Andalucía
+234	Aldaya	32 656	Valencia	 Comunidad Valenciana
+235	Salt	32 517	Gerona	 Cataluña
+236	Totana	32 329	 Región de Murcia
+237	Lejona	32 172	 Vizcaya	 País Vasco
+238	Ames	32 095	La Coruña	 Galicia
+239	Agüimes	32 067	Las Palmas	 Canarias
+240	Ingenio	31 932	Las Palmas	 Canarias
+241	Níjar	31 816	 Almería	 Andalucía
+242	San Pedro de Ribas	31 688	 Barcelona	 Cataluña
+243	Carballo	31 432	La Coruña	 Galicia
+244	Vall de Uxó	31 388	Castellón	 Comunidad Valenciana
+245	Navalcarnero	31 379	 Comunidad de Madrid
+246	Sitges	31 222	 Barcelona	 Cataluña
+247	Manises	31 170	Valencia	 Comunidad Valenciana
+248	Arcos de la Frontera	30 953	 Cádiz	 Andalucía
+249	Ciudadela	30 811	 Islas Baleares
+250	Culleredo	30 790	La Coruña	 Galicia
+251	Coria del Río	30 714	 Sevilla	 Andalucía
+252	Illescas	30 553	 Toledo	 Castilla-La Mancha
+253	Alcázar de San Juan	30 516	 Ciudad Real	 Castilla-La Mancha
+254	Hellín	30 492	 Albacete	 Castilla-La Mancha
+255	Camargo	30 374	 Cantabria
+256	Puerto de la Cruz	30 349	Santa Cruz de Tenerife	 Canarias
+257	Chirivella	30 326	Valencia	 Comunidad Valenciana
+258	Valdepeñas	30 071	 Ciudad Real	 Castilla-La Mancha
+259	San Andrés del Rabanedo	29 888	 León	 Castilla y León
+260	Crevillente	29 881	Alicante	 Comunidad Valenciana
+261	Puente Genil	29 748	 Córdoba	 Andalucía
+262	Játiva	29 637	Valencia	 Comunidad Valenciana
+263	Durango	29 609	 Vizcaya	 País Vasco
+264	Alacuás	29 537	Valencia	 Comunidad Valenciana
+265	Rota	29 491	 Cádiz	 Andalucía
+266	Mahón	29 445	 Islas Baleares
+267	Campello	29 409	Alicante	 Comunidad Valenciana
+268	Galdácano	29 285	 Vizcaya	 País Vasco
+269	Carmona	29 279	 Sevilla	 Andalucía
+270	Vinaroz	29 120	Castellón	 Comunidad Valenciana
+271	Calafell	29 102	 Tarragona	 Cataluña
+272	Redondela	29 055	 Pontevedra	 Galicia
+273	Salou	29 028	 Tarragona	 Cataluña
+274	San José	28 813	 Islas Baleares
+275	Jávea	28 731	Alicante	 Comunidad Valenciana
+276	Martorell	28 684	 Barcelona	 Cataluña
+277	Catarroja	28 679	Valencia	 Comunidad Valenciana
+278	Lepe	28 617	 Huelva	 Andalucía
+279	Premiá de Mar	28 518	 Barcelona	 Cataluña
+280	Candelaria	28 485	Santa Cruz de Tenerife	 Canarias
+281	Villaviciosa de Odón	28 152	 Comunidad de Madrid
+282	Seseña	28 102	 Toledo	 Castilla-La Mancha
+283	Pineda de Mar	28 083	 Barcelona	 Cataluña
+284	San Vicente dels Horts	28 079	 Barcelona	 Cataluña
+285	La Oliva	27 945	Las Palmas	 Canarias
+286	Benicarló	27 780	Castellón	 Comunidad Valenciana
+287	Sueca	27 738	Valencia	 Comunidad Valenciana
+288	Cártama	27 712	 Málaga	 Andalucía
+289	Lebrija	27 665	 Sevilla	 Andalucía
+290	Vícar	27 631	 Almería	 Andalucía
+291	Camas	27 443	 Sevilla	 Andalucía
+292	San Antonio Abad	27 431	 Islas Baleares
+293	Almazora	27 383	Castellón	 Comunidad Valenciana
+294	Morón de la Frontera	27 357	 Sevilla	 Andalucía
+295	Sestao	27 342	 Vizcaya	 País Vasco
+296	Algemesí	27 305	Valencia	 Comunidad Valenciana
+297	Éibar	27 282	 Guipúzcoa	 País Vasco
+298	San Andrés de la Barca	26 965	 Barcelona	 Cataluña
+299	Riveira	26 897	La Coruña	 Galicia
+300	Cangas de Morrazo	26 832	 Pontevedra	 Galicia
+301	San Pedro del Pinatar	26 827	 Región de Murcia
+302	Almuñécar	26 748	 Granada	 Andalucía
+303	Jumilla	26 596	 Región de Murcia
+304	Paiporta	26 567	Valencia	 Comunidad Valenciana
+305	Paracuellos de Jarama	26 450	 Comunidad de Madrid
+306	Alhaurín el Grande	26 436	 Málaga	 Andalucía
+307	Bétera	26 289	Valencia	 Comunidad Valenciana
+308	Piélagos	26 279	 Cantabria
+309	Molins de Rey	26 242	 Barcelona	 Cataluña
+310	Muchamiel	26 192	Alicante	 Comunidad Valenciana
+311	Santa Perpetua de Moguda	25 930	 Barcelona	 Cataluña
+312	Villanueva de la Serena	25 873	 Badajoz	 Extremadura
+313	Caravaca de la Cruz	25 722	 Región de Murcia
+314	Puebla de Vallbona	25 625	Valencia	 Comunidad Valenciana
+315	Novelda	25 592	Alicante	 Comunidad Valenciana
+316	Almonte	25 448	 Huelva	 Andalucía
+317	Ciempozuelos	25 383	 Comunidad de Madrid
+318	Tomares	25 341	 Sevilla	 Andalucía
+319	Adra	25 300	 Almería	 Andalucía
+320	Oliva	25 179	Valencia	 Comunidad Valenciana
+321	Cuart de Poblet	25 167	Valencia	 Comunidad Valenciana
+322	Alboraya	25 149	Valencia	 Comunidad Valenciana
+323	Onda	25 099	Castellón	 Comunidad Valenciana
+324	Castellar del Vallés	24 933	 Barcelona	 Cataluña
+325	Villarrobledo	24 886	 Albacete	 Castilla-La Mancha
+326	Torrelodones	24 775	 Comunidad de Madrid
+327	Valls	24 727	 Tarragona	 Cataluña
+328	Calahorra	24 654	 La Rioja
+329	Armilla	24 629	 Granada	 Andalucía
+330	Tacoronte	24 592	Santa Cruz de Tenerife	 Canarias
+331	Gáldar	24 567	Las Palmas	 Canarias
+332	Cambre	24 505	La Coruña	 Galicia
+333	San Juan de Alicante	24 450	Alicante	 Comunidad Valenciana
+334	Erandio	24 446	 Vizcaya	 País Vasco
+335	Martos	24 329	 Jaén	 Andalucía
+336	Coín	24 309	 Málaga	 Andalucía
+337	Olesa de Montserrat	24 272	 Barcelona	 Cataluña
+338	Almansa	24 224	 Albacete	 Castilla-La Mancha
+339	Calpe	24 098	Alicante	 Comunidad Valenciana
+340	Los Barrios	24 069	 Cádiz	 Andalucía
+341	Liria	24 036	Valencia	 Comunidad Valenciana
+342	Marín	24 034	 Pontevedra	 Galicia
+343	Mairena del Alcor	23 938	 Sevilla	 Andalucía
+344	Mejorada del Campo	23 897	 Comunidad de Madrid
+345	El Masnou	23 829	 Barcelona	 Cataluña
+346	Ibi	23 677	Alicante	 Comunidad Valenciana
+347	Icod de los Vinos	23 498	Santa Cruz de Tenerife	 Canarias
+348	Conil de la Frontera	23 497	 Cádiz	 Andalucía
+349	Teguise	23 411	Las Palmas	 Canarias
+350	Palafrugell	23 396	Gerona	 Cataluña
+351	Zarauz	23 101	 Guipúzcoa	 País Vasco
+352	Ribarroja del Turia	23 050	Valencia	 Comunidad Valenciana
+353	Puenteareas	23 049	 Pontevedra	 Galicia
+354	Altea	23 010	Alicante	 Comunidad Valenciana
+355	Pilar de la Horadada	22 949	Alicante	 Comunidad Valenciana
+356	Cullera	22 937	Valencia	 Comunidad Valenciana
+357	Barbate	22 872	 Cádiz	 Andalucía
+358	Villanueva de la Cañada	22 845	 Comunidad de Madrid
+359	Alhama de Murcia	22 691	 Región de Murcia
+360	Vilaseca	22 681	 Tarragona	 Cataluña
+361	Moguer	22 643	 Huelva	 Andalucía
+362	Laguna de Duero	22 642	 Valladolid	 Castilla y León
+363	Bormujos	22 536	 Sevilla	 Andalucía
+364	Montilla	22 490	 Córdoba	 Andalucía
+365	Esparraguera	22 365	 Barcelona	 Cataluña
+366	Las Gabias	22 312	 Granada	 Andalucía
+367	Maracena	22 293	 Granada	 Andalucía
+368	Castrillón	22 235	 Principado de Asturias
+369	San Feliú de Guíxols	22 149	Gerona	 Cataluña
+370	San Juan de Aznalfarache	22 138	 Sevilla	 Andalucía
+371	Priego de Córdoba	22 092	 Córdoba	 Andalucía
+372	Aljaraque	22 078	 Huelva	 Andalucía
+373	Las Torres de Cotillas	21 980	 Región de Murcia
+374	San Miguel de Abona	21 915	Santa Cruz de Tenerife	 Canarias
+375	Moncada	21 913	Valencia	 Comunidad Valenciana
+376	Amposta	21 807	 Tarragona	 Cataluña
+377	Valle de Egüés	21 795	 Navarra
+378	Picasent	21 761	Valencia	 Comunidad Valenciana
+379	Mondragón	21 760	 Guipúzcoa	 País Vasco
+380	Ayamonte	21 725	 Huelva	 Andalucía
+381	Guía de Isora	21 711	Santa Cruz de Tenerife	 Canarias
+382	Alcalá la Real	21 556	 Jaén	 Andalucía
+383	Isla Cristina	21 523	 Huelva	 Andalucía
+384	Alfafar	21 480	Valencia	 Comunidad Valenciana
+385	Nerja	21 450	 Málaga	 Andalucía
+386	Almoradí	21 401	Alicante	 Comunidad Valenciana
+387	Arroyo de la Encomienda	21 369	 Valladolid	 Castilla y León
+388	Güímar	21 224	Santa Cruz de Tenerife	 Canarias
+389	Aspe	21 191	Alicante	 Comunidad Valenciana
+390	Tías	21 083	Las Palmas	 Canarias
+391	Vilasar de Mar	21 067	 Barcelona	 Cataluña
+392	Manlleu	20 883	 Barcelona	 Cataluña
+393	Palma del Río	20 810	 Córdoba	 Andalucía
+394	Algete	20 767	 Comunidad de Madrid
+395	Pájara	20 751	Las Palmas	 Canarias
+396	Alcudia	20 717	 Islas Baleares
+397	Cartaya	20 717	 Huelva	 Andalucía
+398	Alfaz del Pi	20 668	Alicante	 Comunidad Valenciana
+399	La Unión	20 656	 Región de Murcia
+400	Loja	20 555	 Granada	 Andalucía
+401	Los Llanos de Aridane	20 551	Santa Cruz de Tenerife	 Canarias
+402	Carcagente	20 498	Valencia	 Comunidad Valenciana
+403	Porriño	20 408	 Pontevedra	 Galicia
+404	Burlada	20 398	 Navarra
+405	Baza	20 375	 Granada	 Andalucía
+406	Hernani	20 375	 Guipúzcoa	 País Vasco
+407	Mogán	20 331	Las Palmas	 Canarias
+408	Las Franquesas del Vallés	20 322	 Barcelona	 Cataluña
+409	Lalín	20 201	 Pontevedra	 Galicia
+410	Puzol	20 191	Valencia	 Comunidad Valenciana
+411	Medina del Campo	20 183	 Valladolid	 Castilla y León
+412	Bañolas	20 187	Gerona	 Cataluña
+413	San Quirico de Tarrasa	20 180	 Barcelona	 Cataluña
+414	La Estrada	20 106	 Pontevedra	 Galicia
+415	Cabra	20 097	 Córdoba	 Andalucía
+416	Huércal-Overa	20 093	 Almería	 Andalucía
+417	Requena	20 058	Valencia	 Comunidad Valenciana
+418	Torrox	19 997	 Málaga	 Andalucía
+419	San Martín de la Vega	19 927	 Comunidad de Madrid
+420	Rosas	19 907	Gerona	 Cataluña
+421	Tolosa	19 886	 Guipúzcoa	 País Vasco
+422	Humanes de Madrid	19 838	 Comunidad de Madrid
+423	San Justo Desvern	19 806	 Barcelona	 Cataluña
+424	Calatayud	19 776	 Zaragoza	 Aragón
+425	Archena	19 622	 Región de Murcia
+426	La Zubia	19 593	 Granada	 Andalucía
+427	Chipiona	19 592	 Cádiz	 Andalucía
+428	Amorebieta-Echano	19 587	 Vizcaya	 País Vasco
+429	Barañáin	19 537	 Navarra
+430	Benicasim	19 507	Castellón	 Comunidad Valenciana
+431	Arahal	19 476	 Sevilla	 Andalucía
+432	Moaña	19 474	 Pontevedra	 Galicia
+433	Atarfe	19 452	 Granada	 Andalucía
+434	Calella	19 363	 Barcelona	 Cataluña
+435	Callosa de Segura	19 315	Alicante	 Comunidad Valenciana
+436	Silla	19 298	Valencia	 Comunidad Valenciana
+437	Marchena	19 264	 Sevilla	 Andalucía
+438	Albolote	19 199	 Granada	 Andalucía
+439	El Viso del Alcor	19 161	 Sevilla	 Andalucía
+440	Malgrat de Mar	19 093	 Barcelona	 Cataluña
+441	San Bartolomé	18 989	Las Palmas	 Canarias
+442	Boiro	18 976	La Coruña	 Galicia
+443	Lasarte-Oria	18 949	 Guipúzcoa	 País Vasco
+444	Teo	18 918	La Coruña	 Galicia
+445	Parets	18 889	 Barcelona	 Cataluña
+446	Utebo	18 881	 Zaragoza	 Aragón
+447	Cardedeu	18 785	 Barcelona	 Cataluña
+448	Baena	18 764	 Córdoba	 Andalucía
+449	La Nucía	18 624	Alicante	 Comunidad Valenciana
+450	Villaquilambre	18 589	 León	 Castilla y León
+451	Tarifa	18 564	 Cádiz	 Andalucía
+452	La Eliana	18 544	Valencia	 Comunidad Valenciana
+453	Guadix	18 493	 Granada	 Andalucía
+454	San Lorenzo de El Escorial	18 423	 Comunidad de Madrid
+455	Lora del Río	18 417	 Sevilla	 Andalucía
+456	Huércal de Almería	18 384	 Almería	 Andalucía
+457	Felanich	18 357	 Islas Baleares
+458	Santa Brígida	18 341	Las Palmas	 Canarias
+459	San Celoni	18 285	 Barcelona	 Cataluña
+460	Vera	18 224	 Almería	 Andalucía
+461	El Astillero	18 153	 Cantabria
+462	Palamós	18 145	Gerona	 Cataluña
+463	Monforte de Lemos	18 081	 Lugo	 Galicia
+464	Nigrán	18 054	 Pontevedra	 Galicia
+465	Tordera	18 022	 Barcelona	 Cataluña
+466	Caldas de Montbuy	17 932	 Barcelona	 Cataluña
+467	Llodio	17 906	 Álava	 País Vasco
+468	Tárrega	17 810	Lérida	 Cataluña
+469	Sangenjo	17 760	 Pontevedra	 Galicia
+470	El Rosario	17 750	Santa Cruz de Tenerife	 Canarias
+471	Manzanares	17 738	 Ciudad Real	 Castilla-La Mancha
+472	Daimiel	17 680	 Ciudad Real	 Castilla-La Mancha
+473	Munguía	17 662	 Vizcaya	 País Vasco
+474	Los Alcázares	17 603	 Región de Murcia
+475	Fuente Álamo de Murcia	17 589	 Región de Murcia
+476	Balaguer	17 460	Lérida	 Cataluña
+477	Osuna	17 442	 Sevilla	 Andalucía
+478	Villanueva del Pardillo	17 382	 Comunidad de Madrid
+479	Bailén	17 377	 Jaén	 Andalucía
+480	Benavente	17 376	Zamora	 Castilla y León
+481	Tuy	17 375	 Pontevedra	 Galicia
+482	Monzón	17 362	 Huesca	 Aragón
+483	Poyo	17 276	 Pontevedra	 Galicia
+484	Torredembarra	17 256	 Tarragona	 Cataluña
+485	Mula	17 231	 Región de Murcia
+486	Castilleja de la Cuesta	17 230	 Sevilla	 Andalucía
+487	Tabernes de Valldigna	17 222	Valencia	 Comunidad Valenciana
+488	Manilva	17 157	 Málaga	 Andalucía
+489	Barbastro	17 146	 Huesca	 Aragón
+490	Pollensa	17 126	 Islas Baleares
+491	Ejea de los Caballeros	17 124	 Zaragoza	 Aragón
+492	Pozoblanco	17 102	 Córdoba	 Andalucía
+493	Rojales	16 943	Alicante	 Comunidad Valenciana
+494	Yaiza	16 924	Las Palmas	 Canarias
+495	Guadarrama	16 921	 Comunidad de Madrid
+496	Fuenterrabía	16 904	 Guipúzcoa	 País Vasco
+497	Guernica y Luno	16 855	 Vizcaya	 País Vasco
+498	Albal	16 845	Valencia	 Comunidad Valenciana
+499	La Garriga	16 788	 Barcelona	 Cataluña
+500	Piera	16 787	 Barcelona	 Cataluña
+501	Navalmoral de la Mata	16 784	 Cáceres	 Extremadura
+502	Berga	16 762	 Barcelona	 Cataluña
+503	Canovellas	16 761	 Barcelona	 Cataluña
+504	Bermeo	16 755	 Vizcaya	 País Vasco
+505	Montornés del Vallés	16 707	 Barcelona	 Cataluña
+506	Zafra	16 702	 Badajoz	 Extremadura
+507	Sada	16 627	La Coruña	 Galicia
+508	El Escorial	16 618	 Comunidad de Madrid
+509	Puerto Lumbreras	16 564	 Región de Murcia
+510	La Algaba	16 491	 Sevilla	 Andalucía
+511	Espartinas	16 401	 Sevilla	 Andalucía
+512	Cubellas	16 386	 Barcelona	 Cataluña
+513	Las Cabezas de San Juan	16 386	 Sevilla	 Andalucía
+514	Ubrique	16 382	 Cádiz	 Andalucía
+515	Chiva	16 285	Valencia	 Comunidad Valenciana
+516	Masamagrell	16 223	Valencia	 Comunidad Valenciana
+517	Punta Umbría	16 167	 Huelva	 Andalucía
+518	Arenys de Mar	16 155	 Barcelona	 Cataluña
+519	Guardamar del Segura	16 138	Alicante	 Comunidad Valenciana
+520	Santomera	16 125	 Región de Murcia
+521	Alcañiz	16 029	 Teruel	 Aragón
+522	Churriana de la Vega	16 026	 Granada	 Andalucía
+523	Carlet	15 945	Valencia	 Comunidad Valenciana
+524	Villalbilla	15 866	 Comunidad de Madrid
+525	Llissá de Munt	15 801	 Barcelona	 Cataluña
+526	Baeza	15 773	 Jaén	 Andalucía
+527	Miguelturra	15 744	 Ciudad Real	 Castilla-La Mancha
+528	Pasajes	15 711	 Guipúzcoa	 País Vasco
+529	Vallirana	15 658	 Barcelona	 Cataluña
+530	Tarancón	15 645	 Cuenca	 Castilla-La Mancha
+531	Ermua	15 589	 Vizcaya	 País Vasco
+532	Tuineje	15 572	Las Palmas	 Canarias
+533	Corvera de Asturias	15 563	 Principado de Asturias
+534	San Martín del Rey Aurelio	15 505	 Principado de Asturias
+535	Zizur Mayor	15 497	 Navarra
+536	La Roda	15 497	 Albacete	 Castilla-La Mancha
+537	Benetúser	15 493	Valencia	 Comunidad Valenciana
+538	Montijo	15 427	 Badajoz	 Extremadura
+539	Santa Cruz de la Palma	15 361	Santa Cruz de Tenerife	 Canarias
+540	La Solana	15 313	 Ciudad Real	 Castilla-La Mancha
+541	Fraga	15 250	 Huesca	 Aragón
+542	Vivero	15 231	 Lugo	 Galicia
+543	Corbera de Llobregat	15 210	 Barcelona	 Cataluña
+544	Mos	15 199	 Pontevedra	 Galicia
+545	Azpeitia	15 154	 Guipúzcoa	 País Vasco
+546	Meco	15 143	 Comunidad de Madrid
+547	Santa Úrsula	15 114	Santa Cruz de Tenerife	 Canarias
+548	Santa Fe	15 042	 Granada	 Andalucía
+549	Arnedo	15 017	 La Rioja
+550	Alpedrete	15 006	 Comunidad de Madrid
+551	Villaviciosa	14 984	 Principado de Asturias
+552	Gondomar	14 970	 Pontevedra	 Galicia
+553	La Carolina	14 960	 Jaén	 Andalucía
+554	Palau-solità i Plegamans	14 911	 Barcelona	 Cataluña
+555	Canet de Mar	14 845	 Barcelona	 Cataluña
+556	Cuevas del Almanzora	14 790	 Almería	 Andalucía
+557	San Carlos de la Rápita	14 767	 Tarragona	 Cataluña
+558	Mollerusa	14 730	Lérida	 Cataluña
+559	Torelló	14 726	 Barcelona	 Cataluña
+560	Cehegín	14 710	 Región de Murcia
+561	Santa Marta de Tormes	14 661	 Salamanca	 Castilla y León
+562	Sopelana	14 635	 Vizcaya	 País Vasco
+563	Ogíjares	14 627	 Granada	 Andalucía
+564	Cunit	14 622	 Tarragona	 Cataluña
+565	Vergara	14 513	 Guipúzcoa	 País Vasco
+566	Andoáin	14 504	 Guipúzcoa	 País Vasco
+567	La Carlota	14 324	 Córdoba	 Andalucía
+568	Bollullos Par del Condado	14 293	 Huelva	 Andalucía
+569	Alginet	14 219	Valencia	 Comunidad Valenciana
+570	Cuarte de Huerva	14 169	 Zaragoza	 Aragón
+571	Noya	14 140	La Coruña	 Galicia
+572	Sanlúcar la Mayor	14 120	 Sevilla	 Andalucía
+573	La Puebla	14 005	 Islas Baleares
+574	Estella	13 977	 Navarra
+575	Pilas	13 964	 Sevilla	 Andalucía
+576	Carballino	13 932	 Orense	 Galicia
+577	Torredelcampo	13 922	 Jaén	 Andalucía
+578	Moralzarzal	13 905	 Comunidad de Madrid
+579	Villalba	13 881	 Lugo	 Galicia
+580	Beasáin	13 877	 Guipúzcoa	 País Vasco
+581	Santa María de Guía de Gran Canaria	13 838	Las Palmas	 Canarias
+582	Llanera	13 792	 Principado de Asturias
+583	Tomiño	13 779	 Pontevedra	 Galicia
+584	Torrijos	13 678	 Toledo	 Castilla-La Mancha
+585	Cambados	13 671	 Pontevedra	 Galicia
+586	Verín	13 625	 Orense	 Galicia
+587	San Agustín del Guadalix	13 608	 Comunidad de Madrid
+588	Santa Coloma de Farnés	13 557	Gerona	 Cataluña
+589	Llanes	13 545	 Principado de Asturias
+590	Gines	13 507	 Sevilla	 Andalucía
+591	Santa Cruz de Bezana	13 482	 Cantabria
+592	Torredonjimeno	13 467	 Jaén	 Andalucía
+593	Sóller	13 454	 Islas Baleares
+594	Valdemorillo	13 453	 Comunidad de Madrid
+595	Nules	13 449	Castellón	 Comunidad Valenciana
+596	Álora	13 382	 Málaga	 Andalucía
+597	El Barco de Valdeorras	13 350	 Orense	 Galicia
+598	Jaca	13 344	 Huesca	 Aragón
+599	Aguilar de la Frontera	13 318	 Córdoba	 Andalucía
+600	Guillena	13 270	 Sevilla	 Andalucía
+601	Sarria	13 214	 Lugo	 Galicia
+602	Canals	13 187	Valencia	 Comunidad Valenciana
+603	Ocaña	13 185	 Toledo	 Castilla-La Mancha
+604	Badía del Vallés	13 163	 Barcelona	 Cataluña
+605	La Llagosta	13 155	 Barcelona	 Cataluña
+606	Campo de Criptana	13 142	 Ciudad Real	 Castilla-La Mancha
+607	Alovera	13 142	 Guadalajara	 Castilla-La Mancha
+608	Montroig	13 101	 Tarragona	 Cataluña
+609	Betanzos	13 066	La Coruña	 Galicia
+610	Godella	13 050	Valencia	 Comunidad Valenciana
+611	Abarán	12 992	 Región de Murcia
+612	Antigua	12 940	Las Palmas	 Canarias
+613	Gibraleón	12 930	 Huelva	 Andalucía
+614	El Casar	12 919	 Guadalajara	 Castilla-La Mancha
+615	Albatera	12 864	Alicante	 Comunidad Valenciana
+616	San Sadurní de Noya	12 863	 Barcelona	 Cataluña
+617	Berja	12 807	 Almería	 Andalucía
+618	Santa Margarita	12 776	 Islas Baleares
+619	Velilla de San Antonio	12 770	 Comunidad de Madrid
+620	Argentona	12 745	 Barcelona	 Cataluña
+621	Castellbisbal	12 735	 Barcelona	 Cataluña
+622	Valverde del Camino	12 721	 Huelva	 Andalucía
+623	Fene	12 702	La Coruña	 Galicia
+624	Vilanova del Camí	12 699	 Barcelona	 Cataluña
+625	Abrera	12 697	 Barcelona	 Cataluña
+626	Teror	12 667	Las Palmas	 Canarias
+627	Vejer de la Frontera	12 656	 Cádiz	 Andalucía
+628	Brenes	12 652	 Sevilla	 Andalucía
+629	Órdenes	12 589	La Coruña	 Galicia
+630	Laviana	12 584	 Principado de Asturias
+631	Palos de la Frontera	12 483	 Huelva	 Andalucía
+632	Salobreña	12 477	 Granada	 Andalucía
+633	Villafranca de los Barros	12 429	 Badajoz	 Extremadura
+634	Ceutí	12 391	 Región de Murcia
+635	Estepa	12 390	 Sevilla	 Andalucía
+636	Monóvar	12 387	Alicante	 Comunidad Valenciana
+637	Bayona	12 349	 Pontevedra	 Galicia
+638	Santañí	12 321	 Islas Baleares
+639	Alcalá del Río	12 315	 Sevilla	 Andalucía
+640	Coria	12 308	 Cáceres	 Extremadura
+641	Montgat	12 277	 Barcelona	 Cataluña
+642	Seo de Urgel	12 261	Lérida	 Cataluña
+643	La Alcudia	12 176	Valencia	 Comunidad Valenciana
+644	Aranguren	12 156	 Navarra
+645	Béjar	12 099	 Salamanca	 Castilla y León
+646	Socuéllamos	12 098	 Ciudad Real	 Castilla-La Mancha
+647	Villamartín	12 095	 Cádiz	 Andalucía
+648	Huétor Vega	12 089	 Granada	 Andalucía
+649	Albox	12 087	 Almería	 Andalucía
+650	Capdepera	12 081	 Islas Baleares
+651	Torroella de Montgrí	12 061	Gerona	 Cataluña
+652	Fuensalida	12 004	 Toledo	 Castilla-La Mancha
+653	Bueu	11 978	 Pontevedra	 Galicia
+654	Ciudad Rodrigo	11 973	 Salamanca	 Castilla y León
+655	Arrigorriaga	11 954	 Vizcaya	 País Vasco
+656	Teulada	11 944	Alicante	 Comunidad Valenciana
+657	Valle de Trápaga	11 918	 Vizcaya	 País Vasco
+658	Bolaños de Calatrava	11 910	 Ciudad Real	 Castilla-La Mancha
+659	Benifayó	11 877	Valencia	 Comunidad Valenciana
+660	Vegas del Genil	11 874	 Granada	 Andalucía
+661	Benisa	11 871	Alicante	 Comunidad Valenciana
+662	La Puebla del Río	11 855	 Sevilla	 Andalucía
+663	Olivenza	11 832	 Badajoz	 Extremadura
+664	Cangas del Narcea	11 817	 Principado de Asturias
+665	Echévarri	11 780	 Vizcaya	 País Vasco
+666	Castillo de Aro	11 757	Gerona	 Cataluña
+667	Son Servera	11 752	 Islas Baleares
+668	Medina Sidonia	11 739	 Cádiz	 Andalucía
+669	Andrach	11 735	 Islas Baleares
+670	Calonge	11 712	Gerona	 Cataluña
+671	Picaña	11 665	Valencia	 Comunidad Valenciana
+672	Deltebre	11 656	 Tarragona	 Cataluña
+673	Haro	11 634	 La Rioja
+674	Bullas	11 627	 Región de Murcia
+675	Peligros	11 624	 Granada	 Andalucía
+676	Campos	11 618	 Islas Baleares
+677	Azcoitia	11 617	 Guipúzcoa	 País Vasco
+678	Castellón de Ampurias	11 611	Gerona	 Cataluña
+679	Pallejá	11 593	 Barcelona	 Cataluña
+680	San Andrés de Llavaneras	11 593	 Barcelona	 Cataluña
+681	Beniel	11 578	 Región de Murcia
+682	Benaguacil	11 568	Valencia	 Comunidad Valenciana
+683	Jódar	11 533	 Jaén	 Andalucía
+684	Oñate	11 515	 Guipúzcoa	 País Vasco
+685	Laracha	11 505	La Coruña	 Galicia
+686	Utiel	11 482	Valencia	 Comunidad Valenciana
+687	Elgóibar	11 480	 Guipúzcoa	 País Vasco
+688	Formentera	11 418	 Islas Baleares
+689	Tegueste	11 359	Santa Cruz de Tenerife	 Canarias
+690	Mancha Real	11 350	 Jaén	 Andalucía
+691	Cocentaina	11 298	Alicante	 Comunidad Valenciana
+692	La Bisbal del Ampurdán	11 163	Gerona	 Cataluña
+693	Santiago del Teide	11 162	Santa Cruz de Tenerife	 Canarias
+694	Bollullos de la Mitación	11 136	 Sevilla	 Andalucía
+695	Valdés	11 099	 Principado de Asturias
+696	Castalla	11 097	Alicante	 Comunidad Valenciana
+697	Lardero	11 094	 La Rioja
+698	Sonseca	11 084	 Toledo	 Castilla-La Mancha
+699	Quintanar de la Orden	11 069	 Toledo	 Castilla-La Mancha
+700	Barbadanes	11 061	 Orense	 Galicia
+701	Cabanillas del Campo	10 968	 Guadalajara	 Castilla-La Mancha
+702	Laredo	10 967	 Cantabria
+703	Rianjo	10 949	La Coruña	 Galicia
+704	La Puebla de Cazalla	10 903	 Sevilla	 Andalucía
+705	Meliana	10 881	Valencia	 Comunidad Valenciana
+706	Santoña	10 857	 Cantabria
+707	Brunete	10 845	 Comunidad de Madrid
+708	Fortuna	10 843	 Región de Murcia
+709	San Juan de Torruella	10 820	 Barcelona	 Cataluña
+710	El Grove	10 809	 Pontevedra	 Galicia
+711	Bargas	10 807	 Toledo	 Castilla-La Mancha
+712	La Roca del Vallés	10 776	 Barcelona	 Cataluña
+713	La Palma del Condado	10 770	 Huelva	 Andalucía
+714	Berriozar	10 765	 Navarra
+715	Cantillana	10 751	 Sevilla	 Andalucía
+716	Los Corrales de Buelna	10 742	 Cantabria
+717	Alberique	10 710	Valencia	 Comunidad Valenciana
+718	Cassá de la Selva	10 680	Gerona	 Cataluña
+719	Daganzo de Arriba	10 650	 Comunidad de Madrid
+720	Ripoll	10 641	Gerona	 Cataluña
+721	Yuncos	10 630	 Toledo	 Castilla-La Mancha
+722	Ansoáin	10 588	 Navarra
+723	Tafalla	10 576	 Navarra
+724	Tarazona	10 565	 Zaragoza	 Aragón
+725	Huétor Tájar	10 543	 Granada	 Andalucía
+726	La Escala	10 520	Gerona	 Cataluña
+727	Lena	10 499	 Principado de Asturias
+728	Pulpí	10 493	 Almería	 Andalucía
+729	Griñón	10 491	 Comunidad de Madrid
+730	Villacarrillo	10 484	 Jaén	 Andalucía
+731	Alcora	10 468	Castellón	 Comunidad Valenciana
+732	Gozón	10 433	 Principado de Asturias
+733	Villafranca de Ordizia	10 424	 Guipúzcoa	 País Vasco
+734	Peñarroya-Pueblonuevo	10 419	 Córdoba	 Andalucía
+735	Premiá de Dalt	10 400	 Barcelona	 Cataluña
+736	Alcácer	10 396	Valencia	 Comunidad Valenciana
+737	Astorga	10 392	 León	 Castilla y León
+738	Oyarzun	10 362	 Guipúzcoa	 País Vasco
+739	Sedaví	10 349	Valencia	 Comunidad Valenciana
+740	Villamarchante	10 348	Valencia	 Comunidad Valenciana
+741	Alcaudete	10 347	 Jaén	 Andalucía
+742	Gelves	10 317	 Sevilla	 Andalucía
+743	Pego	10 295	Alicante	 Comunidad Valenciana
+744	Santa Margarita de Montbuy	10 294	 Barcelona	 Cataluña
+745	Amurrio	10 281	 Álava	 País Vasco
+746	Villanueva de Arosa	10 240	 Pontevedra	 Galicia
+747	Carreño	10 226	 Principado de Asturias
+748	Caspe	10 220	 Zaragoza	 Aragón
+749	Llinás del Vallés	10 205	 Barcelona	 Cataluña
+750	Madridejos	10 202	 Toledo	 Castilla-La Mancha
+751	Aller	10 201	 Principado de Asturias
+752	Oropesa del Mar	10 184	Castellón	 Comunidad Valenciana
+753	Calasparra	10 163	 Región de Murcia
+754	Zumaya	10 153	 Guipúzcoa	 País Vasco
+755	Caudete	10 135	 Albacete	 Castilla-La Mancha
+756	El Álamo	10 123	 Comunidad de Madrid
+757	Foz	10 118	 Lugo	 Galicia
+758	Alella	10 079	 Barcelona	 Cataluña
+759	Salvatierra de Miño	10 079	 Pontevedra	 Galicia
+760	Garrucha	10 027	 Almería	 Andalucía
+761	La Bañeza	10 024	 León	 Castilla y León
+762	Villava	10 022	 Navarra
+763	Íllora	10 020	 Granada	 Andalucía
+764	La Guardia	10 013	 Pontevedra	 Galicia
+765	Sax	9 988	Alicante	 Comunidad Valenciana
+766	Puentes de García Rodríguez	9 974	La Coruña	 Galicia
+767	Mengíbar	9 965	 Jaén	 Andalucía
+768	Alguazas	9 965	 Región de Murcia
+769	San Vicente de Castellet	9 949	 Barcelona	 Cataluña
+770	Torrejón de la Calzada	9 947	 Comunidad de Madrid
+771	Alhendín	9 941	 Granada	 Andalucía
+772	Masanasa	9 929	Valencia	 Comunidad Valenciana
+773	Binéfar	9 888	 Huesca	 Aragón
+774	Consuegra	9 886	 Toledo	 Castilla-La Mancha
+775	Fuente Palmera	9 879	 Córdoba	 Andalucía
+776	San Antonio de Benagéber	9 874	Valencia	 Comunidad Valenciana
+777	Ribadeo	9 811	 Lugo	 Galicia
+778	Pinos Puente	9 804	 Granada	 Andalucía
+779	Rute	9 801	 Córdoba	 Andalucía
+780	Mora	9 796	 Toledo	 Castilla-La Mancha
+781	Santa María de Palautordera	9 777	 Barcelona	 Cataluña
+782	Bigas	9 757	 Barcelona	 Cataluña
+783	Matadepera	9 752	 Barcelona	 Cataluña
+784	Masquefa	9 744	 Barcelona	 Cataluña
+785	Alfaro	9 727	 La Rioja
+786	Caldas de Reyes	9 678	 Pontevedra	 Galicia
+787	Villarrubia de los Ojos	9 667	 Ciudad Real	 Castilla-La Mancha
+788	Palafolls	9 661	 Barcelona	 Cataluña
+789	Pizarra	9 661	 Málaga	 Andalucía
+790	Fernán Núñez	9 646	 Córdoba	 Andalucía
+791	Alcarrás	9 637	Lérida	 Cataluña
+792	Zumárraga	9 636	 Guipúzcoa	 País Vasco
+793	Cuéllar	9 620	 Segovia	 Castilla y León
+794	Alcanar	9 612	 Tarragona	 Cataluña
+795	Ginzo de Limia	9 611	 Orense	 Galicia
+796	Alayor	9 606	 Islas Baleares
+797	Grado	9 598	 Principado de Asturias
+798	San Juan del Puerto	9 532	 Huelva	 Andalucía
+799	Valsequillo de Gran Canaria	9 490	Las Palmas	 Canarias
+800	Puigcerdá	9 484	Gerona	 Cataluña
+801	Tocina	9 484	 Sevilla	 Andalucía
+802	El Espinar	9 476	 Segovia	 Castilla y León
+803	Colmenarejo	9 473	 Comunidad de Madrid
+804	Miajadas	9 458	 Cáceres	 Extremadura
+805	Olivares	9 444	 Sevilla	 Andalucía
+806	Buñol	9 438	Valencia	 Comunidad Valenciana
+807	El Molar	9 437	 Comunidad de Madrid
+808	Burela	9 430	 Lugo	 Galicia
+809	Villacañas	9 418	 Toledo	 Castilla-La Mancha
+810	Senmanat	9 417	 Barcelona	 Cataluña
+811	Cervera	9 393	Lérida	 Cataluña
+812	Rafelbuñol	9 381	Valencia	 Comunidad Valenciana
+813	Salceda de Caselas	9 380	 Pontevedra	 Galicia
+814	Abanto y Ciérvana	9 369	 Vizcaya	 País Vasco
+815	Santa Comba	9 365	La Coruña	 Galicia
+816	Sevilla la Nueva	9 361	 Comunidad de Madrid
+817	Sabiñánigo	9 352	 Huesca	 Aragón
+818	San Sebastián de La Gomera	9 342	Santa Cruz de Tenerife	 Canarias
+819	Cervelló	9 307	 Barcelona	 Cataluña
+820	Muro de Alcoy	9 303	Alicante	 Comunidad Valenciana
+821	Puebla del Caramiñal	9 290	La Coruña	 Galicia
+822	Arenys de Munt	9 278	 Barcelona	 Cataluña
+823	Umbrete	9 253	 Sevilla	 Andalucía
+824	Manzanares el Real	9 247	 Comunidad de Madrid
+825	Tabernes Blanques	9 222	Valencia	 Comunidad Valenciana
+826	Montoro	9 202	 Córdoba	 Andalucía
+827	Santa María de Cayón	9 192	 Cantabria
+828	Soto del Real	9 188	 Comunidad de Madrid
+829	La Victoria de Acentejo	9 170	Santa Cruz de Tenerife	 Canarias
+830	Jerez de los Caballeros	9 167	 Badajoz	 Extremadura
+831	Padul	9 158	 Granada	 Andalucía
+832	Puerto del Son	9 153	La Coruña	 Galicia
+833	Segorbe	9 146	Castellón	 Comunidad Valenciana
+834	Solsona	9 131	Lérida	 Cataluña
+835	Cisterniga	9 129	 Valladolid	 Castilla y León
+836	Vilasar de Dalt	9 128	 Barcelona	 Cataluña
+837	Suances	9 115	 Cantabria
+838	Tiana	9 110	 Barcelona	 Cataluña
+839	San Fulgencio	9 091	Alicante	 Comunidad Valenciana
+840	Palomares del Río	9 083	 Sevilla	 Andalucía
+841	San Fausto de Campcentellas	9 064	 Barcelona	 Cataluña
+842	La Matanza de Acentejo	9 054	Santa Cruz de Tenerife	 Canarias
+843	San Lorenzo del Cardezar	9 035	 Islas Baleares
+844	Binisalem	9 027	 Islas Baleares
+845	San Fructuoso de Bages	9 025	 Barcelona	 Cataluña
+846	Llagostera	9 024	Gerona	 Cataluña
+847	La Ametlla	9 020	 Barcelona	 Cataluña
+848	Monserrat	9 017	Valencia	 Comunidad Valenciana
+849	Tineo	9 009	 Principado de Asturias
+850	El Sauzal	9 005	Santa Cruz de Tenerife	 Canarias
+851	Catral	8 976	Alicante	 Comunidad Valenciana
+852	Cheste	8 971	Valencia	 Comunidad Valenciana
+853	Loeches	8 944	 Comunidad de Madrid
+854	Almusafes	8 929	Valencia	 Comunidad Valenciana
+855	Almagro	8 907	 Ciudad Real	 Castilla-La Mancha
+856	Silleda	8 860	 Pontevedra	 Galicia
+857	La Mojonera	8 824	 Almería	 Andalucía
+858	San Martín de Valdeiglesias	8 812	 Comunidad de Madrid
+859	Hoyo de Manzanares	8 811	 Comunidad de Madrid
+860	Montmeló	8 793	 Barcelona	 Cataluña
+861	El Puig	8 792	Valencia	 Comunidad Valenciana
+862	Benahavís	8 763	 Málaga	 Andalucía
+863	Arico	8 754	Santa Cruz de Tenerife	 Canarias
+864	Villamediana de Iregua	8 745	 La Rioja
+865	Trujillo	8 695	 Cáceres	 Extremadura
+866	Tordesillas	8 664	 Valladolid	 Castilla y León
+867	Reinosa	8 660	 Cantabria
+868	Tudela de Duero	8 636	 Valladolid	 Castilla y León
+869	Zuera	8 632	 Zaragoza	 Aragón
+870	El Cuervo de Sevilla	8 623	 Sevilla	 Andalucía
+871	Monforte del Cid	8 619	Alicante	 Comunidad Valenciana
+872	Villanueva de Córdoba	8 587	 Córdoba	 Andalucía
+873	Colindres	8 512	 Cantabria
+874	Santiponce	8 507	 Sevilla	 Andalucía
+875	Olias del Rey	8 469	 Toledo	 Castilla-La Mancha
+876	Ortuella	8 466	 Vizcaya	 País Vasco
+877	Colmenar de Oreja	8 462	 Comunidad de Madrid
+878	Reocín	8 455	 Cantabria
+879	Polinyá	8 451	 Barcelona	 Cataluña
+880	Toro	8 448	Zamora	 Castilla y León
+881	Herencia	8 432	 Ciudad Real	 Castilla-La Mancha
+882	Campillos	8 372	 Málaga	 Andalucía
+883	Tona	8 368	 Barcelona	 Cataluña
+884	Puebla de Farnals	8 368	Valencia	 Comunidad Valenciana
+885	Noáin	8 367	 Navarra
+886	Muros	8 365	La Coruña	 Galicia
+887	Ollería	8 355	Valencia	 Comunidad Valenciana
+888	Padrón	8 349	La Coruña	 Galicia
+889	Legazpia	8 337	 Guipúzcoa	 País Vasco
+890	Corella	8 336	 Navarra
+891	Santa Coloma de Cervelló	8 309	 Barcelona	 Cataluña
+892	Zalla	8 300	 Vizcaya	 País Vasco
+893	Pedreguer	8 280	Alicante	 Comunidad Valenciana
+894	Bembibre	8 279	 León	 Castilla y León
+895	Navia	8 263	 Principado de Asturias
+896	Ondárroa	8 246	 Vizcaya	 País Vasco
+897	Aracena	8 240	 Huelva	 Andalucía
+898	El Boalo	8 216	 Comunidad de Madrid
+899	Peñíscola	8 210	Castellón	 Comunidad Valenciana
+900	Cabezón de la Sal	8 208	 Cantabria
+901	Caldas de Malavella	8 196	Gerona	 Cataluña
+902	Roquetas	8 193	 Tarragona	 Cataluña
+903	Carboneras	8 183	 Almería	 Andalucía
+904	Monachil	8 182	 Granada	 Andalucía
+905	Vidreras	8 167	Gerona	 Cataluña
+906	Redován	8 123	Alicante	 Comunidad Valenciana
+907	Cenes de la Vega	8 121	 Granada	 Andalucía
+908	Cintruénigo	8 106	 Navarra
+909	Almodóvar del Río	8 093	 Córdoba	 Andalucía
+910	Villablino	8 086	 León	 Castilla y León
+911	Pinoso	8 084	Alicante	 Comunidad Valenciana
+912	Chantada	8 083	 Lugo	 Galicia
+913	Los Santos de Maimona	8 072	 Badajoz	 Extremadura
+914	Brión	8 069	La Coruña	 Galicia
+915	Nájera	8 069	 La Rioja
+916	Artá	8 062	 Islas Baleares
+917	Marchamalo	8 030	 Guadalajara	 Castilla-La Mancha
+918	Archidona	8 024	 Málaga	 Andalucía
+919	Valencina de la Concepción	7 988	 Sevilla	 Andalucía
+920	Olvera	7 974	 Cádiz	 Andalucía
+921	Villanueva del Arzobispo	7 968	 Jaén	 Andalucía
+922	Morata de Tajuña	7 960	 Comunidad de Madrid
+923	La Almunia de Doña Godina	7 943	 Zaragoza	 Aragón
+924	Trigueros	7 926	 Huelva	 Andalucía
+925	Finestrat	7 909	Alicante	 Comunidad Valenciana
+926	Pravia	7 905	 Principado de Asturias
+927	El Paso	7 901	Santa Cruz de Tenerife	 Canarias
+928	San Esteban de Sasroviras	7 889	 Barcelona	 Cataluña
+929	Arévalo	7 881	 Ávila	 Castilla y León
+930	Moya	7 870	Las Palmas	 Canarias
+931	Rociana del Condado	7 866	 Huelva	 Andalucía
+932	Baztán	7 851	 Navarra
+933	La Puebla de Montalbán	7 838	 Toledo	 Castilla-La Mancha
+934	Gélida	7 814	 Barcelona	 Cataluña
+935	Malagón	7 801	 Ciudad Real	 Castilla-La Mancha
+936	Dolores	7 799	Alicante	 Comunidad Valenciana
+937	Gerena	7 774	 Sevilla	 Andalucía
+938	Tobarra	7 758	 Albacete	 Castilla-La Mancha
+939	Moratalla	7 753	 Región de Murcia
+940	Santa Eulalia de Ronsana	7 740	 Barcelona	 Cataluña
+941	Cabrils	7 729	 Barcelona	 Cataluña
+942	Náquera	7 728	Valencia	 Comunidad Valenciana
+943	Cúllar Vega	7 719	 Granada	 Andalucía
+944	Torres de la Alameda	7 714	 Comunidad de Madrid
+945	Castro del Río	7 711	 Córdoba	 Andalucía
+946	Villaverde del Río	7 711	 Sevilla	 Andalucía
+947	Abadiano	7 708	 Vizcaya	 País Vasco
+948	Casares	7 700	 Málaga	 Andalucía
+949	Vega de San Mateo	7 682	Las Palmas	 Canarias
+950	Muro	7 667	 Islas Baleares
+951	Medio Cudeyo	7 663	 Cantabria
+952	Callosa de Ensarriá	7 653	Alicante	 Comunidad Valenciana
+953	Viladecaballs	7 644	 Barcelona	 Cataluña
+954	Centellas	7 641	 Barcelona	 Cataluña
+955	Azuaga	7 636	 Badajoz	 Extremadura
+956	Valmaseda	7 636	 Vizcaya	 País Vasco
+957	Villarejo de Salvanés	7 629	 Comunidad de Madrid
+958	Santa Margarita y Monjós	7 624	 Barcelona	 Cataluña
+959	Quintanar del Rey	7 616	 Cuenca	 Castilla-La Mancha
+960	Sampedor	7 612	 Barcelona	 Cataluña
+961	Bornos	7 607	 Cádiz	 Andalucía
+962	Rocafort	7 603	Valencia	 Comunidad Valenciana
+963	Camarma de Esteruelas	7 595	 Comunidad de Madrid
+964	Roda de Bará	7 591	 Tarragona	 Cataluña
+965	Firgas	7 581	Las Palmas	 Canarias
+966	Onil	7 580	Alicante	 Comunidad Valenciana
+967	Cee	7 573	La Coruña	 Galicia
+968	Oroso	7 572	La Coruña	 Galicia
+969	Massanet de la Selva	7 572	Gerona	 Cataluña
+970	Puentedeume	7 563	La Coruña	 Galicia
+971	Valverde de la Virgen	7 559	 León	 Castilla y León
+972	Cobeña	7 551	 Comunidad de Madrid
+973	Sotomayor	7 543	 Pontevedra	 Galicia
+974	La Aldea de San Nicolás	7 536	Las Palmas	 Canarias
+975	Cercedilla	7 533	 Comunidad de Madrid
+976	Villacarlos	7 525	 Islas Baleares
+977	La Rambla	7 525	 Córdoba	 Andalucía
+978	Lorquí	7 510	 Región de Murcia
+979	Alsasua	7 504	 Navarra
+980	Foyos	7 496	Valencia	 Comunidad Valenciana
+981	Santa María del Camino	7 483	 Islas Baleares
+982	Almácera	7 482	Valencia	 Comunidad Valenciana
+983	Pedro Muñoz	7 480	 Ciudad Real	 Castilla-La Mancha
+984	Collado Mediano	7 456	 Comunidad de Madrid
+985	Berrioplano	7 453	 Navarra
+986	Begas	7 450	 Barcelona	 Cataluña
+987	Mellid	7 438	La Coruña	 Galicia
+988	Cox	7 431	Alicante	 Comunidad Valenciana
+989	Carbajosa de la Sagrada	7 424	 Salamanca	 Castilla y León
+990	Albuñol	7 420	 Granada	 Andalucía
+991	Astigarraga	7 417	 Guipúzcoa	 País Vasco
+992	Montblanch	7 410	 Tarragona	 Cataluña
+993	Villamayor	7 402	 Salamanca	 Castilla y León
+994	Guisona	7 390	Lérida	 Cataluña
+995	Musques	7 367	 Vizcaya	 País Vasco
+996	Villa de Otura	7 362	 Granada	 Andalucía
+997	Berango	7 347	 Vizcaya	 País Vasco
+998	Moncófar	7 338	Castellón	 Comunidad Valenciana
+999	Andorra	7 327	 Teruel	 Aragón
+1000	Vacarisas	7 325	 Barcelona	 Cataluña
+1001	Huarte	7 312	 Navarra
+1002	Elorrio	7 309	 Vizcaya	 País Vasco
+1003	Benacazón	7 299	 Sevilla	 Andalucía
+1004	Posadas	7 267	 Córdoba	 Andalucía
+1005	Talayuela	7 266	 Cáceres	 Extremadura
+1006	Bujalance	7 257	 Córdoba	 Andalucía
+1007	Mojácar	7 257	 Almería	 Andalucía
+1008	Huéscar	7 246	 Granada	 Andalucía
+1009	Dúrcal	7 216	 Granada	 Andalucía
+1010	La Ametlla de Mar	7 209	 Tarragona	 Cataluña
+1011	Bañeres	7 201	Alicante	 Comunidad Valenciana
+1012	Breña Alta	7 199	Santa Cruz de Tenerife	 Canarias
+1013	Cazorla	7 183	 Jaén	 Andalucía
+1014	Lequeitio	7 178	 Vizcaya	 País Vasco
+1015	Alagón	7 178	 Zaragoza	 Aragón
+1016	Fuentes de Andalucía	7 173	 Sevilla	 Andalucía
+1017	Torreperogil	7 130	 Jaén	 Andalucía
+1018	Bigastro	7 130	Alicante	 Comunidad Valenciana
+1019	Buñola	7 121	 Islas Baleares
+1020	Villa del Prado	7 092	 Comunidad de Madrid
+1021	Ondara	7 085	Alicante	 Comunidad Valenciana
+1022	Arechavaleta	7 069	 Guipúzcoa	 País Vasco
+1023	Fuente el Saz de Jarama	7 034	 Comunidad de Madrid
+1024	Benalup-Casas Viejas	7 020	 Cádiz	 Andalucía
+1025	Turís	7 019	Valencia	 Comunidad Valenciana
+1026	Trebujena	7 010	 Cádiz	 Andalucía
+1027	Villa del Río	6 993	 Córdoba	 Andalucía
+1028	Montellano	6 976	 Sevilla	 Andalucía
+1029	Puerto Serrano	6 971	 Cádiz	 Andalucía
+1030	San Clemente	6 953	 Cuenca	 Castilla-La Mancha
+1031	San Luis	6 953	 Islas Baleares
+1032	Canet de Berenguer	6 942	Valencia	 Comunidad Valenciana
+1033	Villanueva de Castellón	6 932	Valencia	 Comunidad Valenciana
+1034	Valdoviño	6 924	La Coruña	 Galicia
+1035	Almacellas	6 922	Lérida	 Cataluña
+1036	Burguillos	6 907	 Sevilla	 Andalucía
+1037	Bergondo	6 892	La Coruña	 Galicia
+1038	Piloña	6 862	 Principado de Asturias
+1039	Jijona	6 860	Alicante	 Comunidad Valenciana
+1040	Vimianzo	6 851	La Coruña	 Galicia
+1041	Argamasilla de Alba	6 846	 Ciudad Real	 Castilla-La Mancha
+1042	Paradas	6 832	 Sevilla	 Andalucía
+1043	Alcalá de Chivert	6 831	Castellón	 Comunidad Valenciana
+1044	Argés	6 829	 Toledo	 Castilla-La Mancha
+1045	Derio	6 819	 Vizcaya	 País Vasco
+1046	Tauste	6 817	 Zaragoza	 Aragón
+1047	Negreira	6 811	La Coruña	 Galicia
+1048	Sallent de Llobregat	6 805	 Barcelona	 Cataluña
+1049	Guareña	6 771	 Badajoz	 Extremadura
+1050	Nuevo Baztán	6 760	 Comunidad de Madrid
+1051	Llissá de Vall	6 760	 Barcelona	 Cataluña
+1052	Vandellós y Hospitalet del Infante	6 750	 Tarragona	 Cataluña
+1053	Villarreal de Urrechua	6 738	 Guipúzcoa	 País Vasco
+1054	Güeñes	6 737	 Vizcaya	 País Vasco
+1055	Riudoms	6 721	 Tarragona	 Cataluña
+1056	Villanueva del Ariscal	6 715	 Sevilla	 Andalucía
+1057	Miraflores de la Sierra	6 711	 Comunidad de Madrid
+1058	San Juan de Labritja	6 703	 Islas Baleares
+1059	Taradell	6 699	 Barcelona	 Cataluña
+1060	Cubas de la Sagra	6 698	 Comunidad de Madrid
+1061	Moraleja	6 691	 Cáceres	 Extremadura
+1062	Constantí	6 685	 Tarragona	 Cataluña
+1063	Blanca	6 681	 Región de Murcia
+1064	Jimena de la Frontera	6 681	 Cádiz	 Andalucía
+1065	Guadalix de la Sierra	6 672	 Comunidad de Madrid
+1066	Museros	6 663	Valencia	 Comunidad Valenciana
+1067	San Vicente de Montalt	6 661	 Barcelona	 Cataluña
+1068	Marmolejo	6 660	 Jaén	 Andalucía
+1069	Fuente del Maestre	6 659	 Badajoz	 Extremadura
+1070	San Miguel de Salinas	6 659	Alicante	 Comunidad Valenciana
+1071	Campo Real	6 651	 Comunidad de Madrid
+1072	Carral	6 649	La Coruña	 Galicia
+1073	Aguilar de Campoo	6 646	 Palencia	 Castilla y León
+1074	Hinojosa del Duque	6 640	 Córdoba	 Andalucía
+1075	Las Pedroñeras	6 638	 Cuenca	 Castilla-La Mancha
+1076	Teyá	6 635	 Barcelona	 Cataluña
+1077	Cedeira	6 626	La Coruña	 Galicia
+1078	Algarrobo	6 625	 Málaga	 Andalucía
+1079	Miño	6 624	La Coruña	 Galicia
+1080	Pereiro de Aguiar	6 609	 Orense	 Galicia
+1081	Jaraíz de la Vera	6 585	 Cáceres	 Extremadura
+1082	Tinajo	6 573	Las Palmas	 Canarias
+1083	Villanueva de la Torre	6 559	 Guadalajara	 Castilla-La Mancha
+1084	Roda de Ter	6 555	 Barcelona	 Cataluña
+1085	Moyá	6 548	 Barcelona	 Cataluña
+1086	Vélez-Rubio	6 528	 Almería	 Andalucía
+1087	Sils	6 507	Gerona	 Cataluña
+1088	Herrera	6 503	 Sevilla	 Andalucía
+1089	Villares de la Reina	6 494	 Salamanca	 Castilla y León
+1090	Villamuriel de Cerrato	6 485	 Palencia	 Castilla y León
+1091	San Antonio Vilamajor	6 483	 Barcelona	 Cataluña
+1092	Arbucias	6 474	Gerona	 Cataluña
+1093	San Felíu de Codinas	6 460	 Barcelona	 Cataluña
+1094	El Rosal	6 450	 Pontevedra	 Galicia
+1095	La Puebla de Alfindén	6 442	 Zaragoza	 Aragón
+1096	Casarrubios del Monte	6 441	 Toledo	 Castilla-La Mancha
+1097	Arenas de San Pedro	6 434	 Ávila	 Castilla y León
+1098	Almensilla	6 415	 Sevilla	 Andalucía
+1099	Almenara	6 388	Castellón	 Comunidad Valenciana
+1100	Briviesca	6 374	 Burgos	 Castilla y León
+1101	San Adrián	6 369	 Navarra
+1102	Gata de Gorgos	6 364	Alicante	 Comunidad Valenciana
+1103	Allariz	6 348	 Orense	 Galicia
+1104	Alpicat	6 333	Lérida	 Cataluña
+1105	Venta de Baños	6 324	 Palencia	 Castilla y León
+1106	Lloseta	6 312	 Islas Baleares
+1107	Pedrezuela	6 307	 Comunidad de Madrid
+1108	Íscar	6 302	 Valladolid	 Castilla y León
+1109	Zaratán	6 285	 Valladolid	 Castilla y León
+1110	Cangas de Onís	6 260	 Principado de Asturias
+1111	Olula del Río	6 259	 Almería	 Andalucía
+1112	Borjas Blancas	6 248	Lérida	 Cataluña
+1113	La Muela	6 247	 Zaragoza	 Aragón
+1114	Santo Domingo de la Calzada	6 242	 La Rioja
+1115	Ulldecona	6 241	 Tarragona	 Cataluña
+1116	Becerril de la Sierra	6 197	 Comunidad de Madrid
+1117	Torrellas de Llobregat	6 186	 Barcelona	 Cataluña
+1118	Tarazona de la Mancha	6 183	 Albacete	 Castilla-La Mancha
+1119	Urnieta	6 181	 Guipúzcoa	 País Vasco
+1120	María de Huerva	6 168	 Zaragoza	 Aragón
+1121	Usúrbil	6 166	 Guipúzcoa	 País Vasco
+1122	Abanilla	6 146	 Región de Murcia
+1123	Polanco	6 126	 Cantabria
+1124	Los Villares	6 120	 Jaén	 Andalucía
+1125	Calamonte	6 115	 Badajoz	 Extremadura
+1126	Peñaranda de Bracamonte	6 099	 Salamanca	 Castilla y León
+1127	Outes	6 108	La Coruña	 Galicia
+1128	Gójar	6 096	 Granada	 Andalucía
+1129	Bonares	6 093	 Huelva	 Andalucía
+1130	Porcuna	6 080	 Jaén	 Andalucía
+1131	Algaida	6 075	 Islas Baleares
+1132	Viator	6 068	 Almería	 Andalucía
+1133	Navarclés	6 067	 Barcelona	 Cataluña
+1134	Orio	6 062	 Guipúzcoa	 País Vasco
+1135	Mota del Cuervo	6 035	 Cuenca	 Castilla-La Mancha
+1136	Ares	6 033	La Coruña	 Galicia
+1137	Górliz	6 031	 Vizcaya	 País Vasco
+1138	Navás	6 018	 Barcelona	 Cataluña
+1139	Lezo	6 011	 Guipúzcoa	 País Vasco
+1140	Aznalcóllar	6 011	 Sevilla	 Andalucía
+1141	Vilaboa	6 004	 Pontevedra	 Galicia
+1142	Torrejón del Rey	6 002	 Guadalajara	 Castilla-La Mancha
+1143	Albaida	5 989	Valencia	 Comunidad Valenciana
+1144	Motilla del Palancar	5 964	 Cuenca	 Castilla-La Mancha
+1145	Lazcano	5 962	 Guipúzcoa	 País Vasco
+1146	Tosa de Mar	5 956	Gerona	 Cataluña
+1147	Peralta	5 938	 Navarra
+1148	Suria	5 921	 Barcelona	 Cataluña
+1149	Arzúa	5 918	La Coruña	 Galicia
+1150	Guadasuar	5 910	Valencia	 Comunidad Valenciana
+1151	Membrilla	5 904	 Ciudad Real	 Castilla-La Mancha
+1152	Artés	5 902	 Barcelona	 Cataluña
+1153	Aldeamayor de San Martín	5 896	 Valladolid	 Castilla y León
+1154	Breña Baja	5 885	Santa Cruz de Tenerife	 Canarias
+1155	Almodóvar del Campo	5 873	 Ciudad Real	 Castilla-La Mancha
+1156	La Canonja	5 873	 Tarragona	 Cataluña
+1157	Yeles	5 868	 Toledo	 Castilla-La Mancha
+1158	Puebla de la Calzada	5 856	 Badajoz	 Extremadura
+1159	Medina de Pomar	5 856	 Burgos	 Castilla y León
+1160	Argamasilla de Calatrava	5 849	 Ciudad Real	 Castilla-La Mancha
+1161	Tremp	5 847	Lérida	 Cataluña
+1162	San Hilario Sacalm	5 836	Gerona	 Cataluña
+1163	Villabona	5 833	 Guipúzcoa	 País Vasco
+1164	Jaraco	5 819	Valencia	 Comunidad Valenciana
+1165	Alaró	5 811	 Islas Baleares
+1166	Coristanco	5 807	La Coruña	 Galicia
+1167	Órgiva	5 791	 Granada	 Andalucía
+1168	Cartes	5 781	 Cantabria
+1169	Constantina	5 779	 Sevilla	 Andalucía
+1170	Isla Mayor	5 767	 Sevilla	 Andalucía
+1171	Los Yébenes	5 752	 Toledo	 Castilla-La Mancha
+1172	Valga	5 752	 Pontevedra	 Galicia
+1173	Borriol	5 749	Castellón	 Comunidad Valenciana
+1174	Esquivias	5 740	 Toledo	 Castilla-La Mancha
+1175	Méntrida	5 722	 Toledo	 Castilla-La Mancha
+1176	Benigánim	5 718	Valencia	 Comunidad Valenciana
+1177	Dosrius	5 710	 Barcelona	 Cataluña
+1178	Alhama de Granada	5 703	 Granada	 Andalucía
+1179	Cerdedo-Cotobad	5 697	 Pontevedra	 Galicia
+1180	La Selva del Campo	5 696	 Tarragona	 Cataluña
+1181	Guardo	5 695	 Palencia	 Castilla y León
+1182	Anglés	5 682	Gerona	 Cataluña
+1183	Torreblanca	5 682	Castellón	 Comunidad Valenciana
+1184	San Pol de Mar	5 680	 Barcelona	 Cataluña
+1185	Mercadal	5 676	 Islas Baleares
+1186	Llerena	5 670	 Badajoz	 Extremadura
+1187	Chauchina	5 667	 Granada	 Andalucía
+1188	Montehermoso	5 666	 Cáceres	 Extremadura
+1189	Chinchón	5 658	 Comunidad de Madrid
+1190	Prado del Rey	5 647	 Cádiz	 Andalucía
+1191	Porreras	5 645	 Islas Baleares
+1192	Ribadesella	5 642	 Principado de Asturias
+1193	Castuera	5 637	 Badajoz	 Extremadura
+1194	Agaete	5 633	Las Palmas	 Canarias
+1195	Arafo	5 623	Santa Cruz de Tenerife	 Canarias
+1196	Celanova	5 619	 Orense	 Galicia
+1197	Librilla	5 619	 Región de Murcia
+1198	Salteras	5 616	 Sevilla	 Andalucía
+1199	Ugena	5 615	 Toledo	 Castilla-La Mancha
+1200	Huelma	5 615	 Jaén	 Andalucía
+1201	Altafulla	5 609	 Tarragona	 Cataluña
+1202	Arbós	5 604	 Tarragona	 Cataluña
+1203	Palazuelos de Eresma	5 597	 Segovia	 Castilla y León
+1204	Arroyo de la Luz	5 596	 Cáceres	 Extremadura
+1205	Bechí	5 587	Castellón	 Comunidad Valenciana
+1206	Mora de Ebro	5 585	 Tarragona	 Cataluña
+1207	Alfacar	5 585	 Granada	 Andalucía
+1208	Santa Cristina de Aro	5 585	Gerona	 Cataluña
+1209	Viella y Medio Arán	5 581	Lérida	 Cataluña
+1210	Puentecaldelas	5 575	 Pontevedra	 Galicia
+1211	Vilafan	5 562	Gerona	 Cataluña
+1212	La Guancha	5 561	Santa Cruz de Tenerife	 Canarias
+1213	San Ciprián de Viñas	5 558	 Orense	 Galicia
+1214	Vilanova del Vallés	5 557	 Barcelona	 Cataluña
+1215	Abegondo	5 534	La Coruña	 Galicia
+1216	El Viso de San Juan	5 533	 Toledo	 Castilla-La Mancha
+1217	Algodonales	5 504	 Cádiz	 Andalucía
+1218	Celrá	5 503	Gerona	 Cataluña
+1219	Guijuelo	5 495	 Salamanca	 Castilla y León
+1220	Pulianas	5 495	 Granada	 Andalucía
+1221	Benejúzar	5 480	Alicante	 Comunidad Valenciana
+1222	Agramunt	5 479	Lérida	 Cataluña
+1223	Cenia	5 475	 Tarragona	 Cataluña
+1224	Aceuchal	5 456	 Badajoz	 Extremadura
+1225	Paterna de Rivera	5 451	 Cádiz	 Andalucía
+1226	Alameda	5 451	 Málaga	 Andalucía
+1227	Puenteceso	5 429	La Coruña	 Galicia
+1228	Simancas	5 423	 Valladolid	 Castilla y León
+1229	Ortigueira	5 420	La Coruña	 Galicia
+1230	Entrambasaguas	5 418	 Cantabria
+1231	Almazán	5 411	 Soria	 Castilla y León
+1232	Montefrío	5 406	 Granada	 Andalucía
+1233	Arjona	5 397	 Jaén	 Andalucía
+1234	Deva	5 395	 Guipúzcoa	 País Vasco
+1235	Macael	5 393	 Almería	 Andalucía
+1236	Cájar	5 389	 Granada	 Andalucía
+1237	Haría	5 382	Las Palmas	 Canarias
+1238	Mollina	5 376	 Málaga	 Andalucía
+1239	Moraleja de Enmedio	5 368	 Comunidad de Madrid
+1240	Nueva Carteya	5 347	 Córdoba	 Andalucía
+1241	Peal de Becerro	5 345	 Jaén	 Andalucía
+1242	Capellades	5 344	 Barcelona	 Cataluña
+1243	Villanueva del Trabuco	5 340	 Málaga	 Andalucía
+1244	Casariche	5 332	 Sevilla	 Andalucía
+1245	Guitiriz	5 328	 Lugo	 Galicia
+1246	Sariegos	5 306	 León	 Castilla y León
+1247	Motrico	5 304	 Guipúzcoa	 País Vasco
+1248	Malpica de Bergantiños	5 296	La Coruña	 Galicia
+1249	Otero de Rey	5 295	 Lugo	 Galicia
+1250	Sarriá de Ter	5 294	Gerona	 Cataluña
+1251	Meaño	5 292	 Pontevedra	 Galicia
+1252	Gualchos	5 292	 Granada	 Andalucía
+1253	San Vicente de Alcántara	5 291	 Badajoz	 Extremadura
+1254	Alcover	5 290	 Tarragona	 Cataluña
+1255	Numancia de la Sagra	5 287	 Toledo	 Castilla-La Mancha
+1256	Cigales	5 286	 Valladolid	 Castilla y León
+1257	Talavera la Real	5 276	 Badajoz	 Extremadura
+1258	Valencia de Alcántara	5 272	 Cáceres	 Extremadura
+1259	Yepes	5 268	 Toledo	 Castilla-La Mancha
+1260	Urdúliz	5 247	 Vizcaya	 País Vasco
+1261	Oza-Cesuras	5 247	La Coruña	 Galicia
+1262	Mugardos	5 246	La Coruña	 Galicia
+1263	La Granja de San Ildefonso	5 237	 Segovia	 Castilla y León
+1264	Nava	5 236	 Principado de Asturias
+1265	Parres	5 233	 Principado de Asturias
+1266	Las Navas del Marqués	5 231	 Ávila	 Castilla y León
+1267	Alcalá de los Gazules	5 227	 Cádiz	 Andalucía
+1268	Añover de Tajo	5 225	 Toledo	 Castilla-La Mancha
+1269	Alcudia de Crespins	5 224	Valencia	 Comunidad Valenciana
+1270	Los Montesinos	5 217	Alicante	 Comunidad Valenciana
+1271	Ribadumia	5 193	 Pontevedra	 Galicia
+1272	Camariñas	5 188	La Coruña	 Galicia
+1273	Polop	5 188	Alicante	 Comunidad Valenciana
+1274	Ayora	5 187	Valencia	 Comunidad Valenciana
+1275	Esporlas	5 182	 Islas Baleares
+1276	Moral de Calatrava	5 178	 Ciudad Real	 Castilla-La Mancha
+1277	La Campana	5 177	 Sevilla	 Andalucía
+1278	Valencia de Don Juan	5 176	 León	 Castilla y León
+1279	Marina de Cudeyo	5 170	 Cantabria
+1280	Bellpuig	5 168	Lérida	 Cataluña
+1281	Bescanó	5 156	Gerona	 Cataluña
+1282	Carranque	5 155	 Toledo	 Castilla-La Mancha
+1283	La Guardia de Jaén	5 151	 Jaén	 Andalucía
+1284	Alburquerque	5 144	 Badajoz	 Extremadura
+1285	Iznalloz	5 142	 Granada	 Andalucía
+1286	Valverde	5 123	Santa Cruz de Tenerife	 Canarias
+1287	Miengo	5 123	 Cantabria
+1288	La Cañiza	5 115	 Pontevedra	 Galicia
+1289	Beas de Segura	5 112	 Jaén	 Andalucía
+1290	Pedrera	5 110	 Sevilla	 Andalucía
+1291	Quesada	5 106	 Jaén	 Andalucía
+1292	Peñafiel	5 104	 Valladolid	 Castilla y León
+1293	Nerva	5 100	 Huelva	 Andalucía
+1294	Alba de Tormes	5 092	 Salamanca	 Castilla y León
+1295	Noreña	5 088	 Principado de Asturias
+1296	Almadén	5 069	 Ciudad Real	 Castilla-La Mancha
+1297	Salvatierra	5 069	 Álava	 País Vasco
+1298	Villa de Cruces	5 063	 Pontevedra	 Galicia
+1299	Borja	5 054	 Zaragoza	 Aragón
+1300	Candeleda	5 049	 Ávila	 Castilla y León
+1301	Marquina-Jeméin	5 042	 Vizcaya	 País Vasco
+1302	Las Salinas	5 039	 Islas Baleares
+1303	El Burgo de Osma	5 034	 Soria	 Castilla y León
+1304	Castro de Rey	5 033	 Lugo	 Galicia
+1305	Castilblanco de los Arroyos	5 027	 Sevilla	 Andalucía
+1306	Nambroca	5 020	 Toledo	 Castilla-La Mancha
+1307	Cerceda	5 019	La Coruña	 Galicia
+1308	Pioz	5 013	 Guadalajara	 Castilla-La Mancha
+1309	Oliva de la Frontera	5 010	 Badajoz	 Extremadura
+1310	Canyellas	5 007	 Barcelona	 Cataluña
+1311	Vedra	5 005	La Coruña	 Galicia
+1312	Mocejón	5 004	 Toledo	 Castilla-La Mancha
+1313	Ribadavia	5 003	 Orense	 Galicia
