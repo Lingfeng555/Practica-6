@@ -59,6 +59,7 @@ public class DataSetMunicipios {
 	 * 
 	 */
 	private void loadDataSet(File file){
+		Municipio municipio;
 		try {
 
 			BufferedReader reader = new BufferedReader(new FileReader(file));
@@ -86,13 +87,13 @@ public class DataSetMunicipios {
 					autonomia = data[3];
 				}
 
-				Municipio municipio = new Municipio(codigo, muni, poblacion, provincia, autonomia);
+				municipio = new Municipio(codigo, muni, poblacion, provincia, autonomia);
 				lMunicipios.add(municipio);
-				
+				addToHashMap(municipio);
 			}
 
 		} catch (Exception e) {
-			e.printStackTrace();
+			//e.printStackTrace();
 		}
 	}
 
@@ -113,6 +114,6 @@ public class DataSetMunicipios {
 		if(!municipiosHashMap.get(municipio.getAutonomia()).containsKey(municipio.getProvincia())){ //Miramos si hay hashmap de esa provincia dentro de esa autonomia
 			municipiosHashMap.get(municipio.getAutonomia()).put(municipio.getProvincia(), new HashMap<>());
 		}
-		municipiosHashMap.get(municipio.getAutonomia()).get(municipio.getProvincia()).
+		municipiosHashMap.get(municipio.getAutonomia()).get(municipio.getProvincia()).put(municipio.getNombre(), municipio);
 	}
 }
