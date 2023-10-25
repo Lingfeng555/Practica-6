@@ -1,10 +1,9 @@
 package resource;
 
 import java.awt.BorderLayout;
-import java.awt.Graphics;
-import java.awt.Panel;
 
 import javax.swing.JFrame;
+import javax.swing.JLabel;
 
 import resource.Tabla.PanelTablaDatos;
 import resource.Tree.PanelMunicipiosTree;
@@ -12,6 +11,7 @@ import resource.Tree.PanelMunicipiosTree;
 public class VentanaTree extends JFrame {
     private PanelTablaDatos panelTablaDatos;
     private PanelMunicipiosTree panelMunicipiosTree;
+    private JLabel superiorLabel;
 
     public VentanaTree (){
         this.setSize(800, 800);
@@ -21,9 +21,12 @@ public class VentanaTree extends JFrame {
 
         this.panelMunicipiosTree = new PanelMunicipiosTree();
         this.panelTablaDatos = new PanelTablaDatos();
-
         this.add(panelMunicipiosTree, BorderLayout.WEST);
         this.add(panelTablaDatos, BorderLayout.CENTER);
+
+        superiorLabel = new JLabel("Aqui en españa nos gusta el jamon");
+        superiorLabel.setSize(800, 100);
+        this.add(superiorLabel, BorderLayout.NORTH);
 
         this.setVisible(true);
     }

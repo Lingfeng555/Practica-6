@@ -4,34 +4,16 @@ import java.awt.BorderLayout;
 import java.awt.Color;
 import java.awt.Component;
 import java.awt.FlowLayout;
-import java.awt.Panel;
-import java.awt.PageAttributes.OrientationRequestedType;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
-import java.awt.event.WindowEvent;
-import java.awt.event.WindowListener;
-import java.awt.event.WindowStateListener;
-import java.beans.PropertyChangeEvent;
-import java.beans.PropertyChangeListener;
 import java.util.ArrayList;
-import java.util.Arrays;
 
 import javax.swing.JButton;
-import javax.swing.JFrame;
-import javax.swing.JLabel;
-import javax.swing.JMenuBar;
 import javax.swing.JPanel;
 import javax.swing.JProgressBar;
-import javax.swing.JScrollBar;
 import javax.swing.JScrollPane;
 import javax.swing.JTable;
-import javax.swing.SwingConstants;
-import javax.swing.border.Border;
-import javax.swing.event.CellEditorListener;
-import javax.swing.event.ChangeEvent;
-import javax.swing.event.TableColumnModelListener;
 import javax.swing.table.DefaultTableCellRenderer;
-import javax.swing.table.TableCellEditor;
 import javax.swing.table.TableCellRenderer;
 
 import resource.DataSet.DataSetMunicipios;
@@ -44,6 +26,7 @@ public class PanelTablaDatos extends JPanel{
     private Model model;
     private JButton anadir;
     private JButton borrar;
+    private JButton orden;
 
     public PanelTablaDatos (){
 
@@ -52,6 +35,7 @@ public class PanelTablaDatos extends JPanel{
         JPanel buttonPanel = new JPanel(new FlowLayout());
         buttonPanel.add(setAnadirButton());
         buttonPanel.add(setBorrarButton());
+        buttonPanel.add(setOrdenButton());
         scrollPane = new JScrollPane(setTable(DataSetMunicipios.getDataSetMunicipios()));
         
         this.add(buttonPanel, BorderLayout.SOUTH);
@@ -82,8 +66,12 @@ public class PanelTablaDatos extends JPanel{
     }
 
     private void borrar() {
-        int[] indexes = table.getSelectedRows().clone();
-        model.removePackRow(indexes);
+        try{
+            int[] indexes = table.getSelectedRows().clone();
+            model.removePackRow(indexes);
+        }catch(java.lang.ArrayIndexOutOfBoundsException e){
+            System.err.println("No hay nada que borrar");
+        }
     }
 
     private JButton setAnadirButton(){
@@ -94,7 +82,8 @@ public class PanelTablaDatos extends JPanel{
     }
 
     private void anadir() {
-        model.addRow(new Object[model.getColumCount()]);
+        //model.addRow(new Object[model.getColumCount()]);
+        System.out.println("JAJA no funcioooona");
     }
 
     private JTable setTable(DataSetMunicipios municipios){
@@ -188,5 +177,15 @@ public class PanelTablaDatos extends JPanel{
             }
         });
         table.repaint();
+    }
+
+    private JButton setOrdenButton(){
+        this.orden = new JButton("Ordenar");
+        orden.addActionListener(e -> Ordenar());
+        return orden;
+    }
+
+    private void Ordenar() {
+        System.out.println("JAJA no ordenaaaaaaa");
     }
 }

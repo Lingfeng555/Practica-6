@@ -93,7 +93,7 @@ public class DataSetMunicipios {
 				lMunicipios.add(municipio);
 				addToHashMap(municipio);
 			}
-
+			reader.close();
 		} catch (Exception e) {
 			//e.printStackTrace();
 		}
