@@ -15,7 +15,6 @@ public class Model extends DefaultTableModel implements TablaModel {
         this.dataset = dataset;
 
         addTableModelListener(new TableModelListener() {
-
             @Override
             public void tableChanged(TableModelEvent e) {
                 System.out.println("Ha cambiado la table UwU");
