@@ -41,11 +41,6 @@ public class Model extends DefaultTableModel implements TablaModel {
         return super.getValueAt(i, j);
     }
     @Override
-    public void setValueAt() {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'setValueAt'");
-    }
-    @Override
     public boolean isCellEditable(int row, int column) {
         //System.out.println("adjh");
         return column == 1 || column==2 ? true : false;
@@ -54,25 +49,17 @@ public class Model extends DefaultTableModel implements TablaModel {
     @Override
     public void setValueAt(Object valeuObject,int i, int j) {
         super.setValueAt(valeuObject, i, j);
-        ArrayList<Municipio> arratMunicipios = (ArrayList<Municipio>) dataset.getListaMunicipios();
-        Municipio municipio = arratMunicipios.get(i-1);
+        Municipio municipio = new Municipio((int)getValueAt(i, 0), (String)getValueAt(i, 1), (int)getValueAt(i, 2), (String)getValueAt(i, 3), (String)getValueAt(i, 4));
+        dataset.removeMunicipio(municipio);
         switch (j) {
-            case 0:
-                municipio.setCodigo(0);
-                break;
             case 1:
-                municipio.setNombre(null);
+                municipio.setNombre((String)valeuObject);
                 break;
             case 2:
-                municipio.setHabitantes(0);
-                break;
-            case 3:
-                municipio.setProvincia(null);
-                break;
-            case 4:
-                municipio.setAutonomia(null);
+                municipio.setHabitantes((int) valeuObject);
                 break;
         }
+        dataset.addMunicipio(municipio);
         if (municipio.isEmpty()){removeRow(i);}
     }
     @Override
@@ -130,6 +117,12 @@ public class Model extends DefaultTableModel implements TablaModel {
     public boolean isCellEditable() {
         // TODO Auto-generated method stub
         throw new UnsupportedOperationException("Unimplemented method 'isCellEditable'");
+    }
+
+    @Override
+    public void setValueAt() {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'setValueAt'");
     }
 
 

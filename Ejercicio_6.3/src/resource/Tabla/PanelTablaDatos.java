@@ -142,6 +142,7 @@ public class PanelTablaDatos extends JPanel{
         table = new JTable(model);
         table.getColumnModel().getColumn(0).setMaxWidth(50);
         table.getColumnModel().getColumn(2).setMaxWidth(150);
+        table.getColumnModel().getColumn(2).setMaxWidth(150);
         table.getColumnModel().getColumn(2).setCellRenderer(new TableCellRenderer() {
 
             @Override
@@ -154,17 +155,15 @@ public class PanelTablaDatos extends JPanel{
                     progressBar.setValue(Integer.parseInt((String)value));  //Cuando lo modificas swing lo toma como string y si salta el error es por eso
                 }
                 progressBar.setToolTipText(String.valueOf(progressBar.getValue()));
-                progressBar.setString(String.valueOf(progressBar.getValue()));
+                //progressBar.setString(String.valueOf(progressBar.getValue()));
                 progressBar.setStringPainted(true);
 
                 int newRedValue = (int) Math.round( (255 * ((int)value)) / 5000000);
                 //System.out.println(newRedValue);
                 Color newColor = new Color(newRedValue, 0, 0);
-
                 progressBar.setBackground(newColor);
                 return progressBar;
             }
-            
         });
 
 
@@ -203,6 +202,7 @@ public class PanelTablaDatos extends JPanel{
             }
             
         });
+
         return table;
     }
 
