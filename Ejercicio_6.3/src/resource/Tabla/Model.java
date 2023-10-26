@@ -86,33 +86,31 @@ public class Model extends DefaultTableModel implements TablaModel {
         Municipio municipio = new Municipio((int)o[0], (String)o[1], (int)o[2], (String)o[3], (String)o[4]);
         super.addRow(o);
         dataset.getListaMunicipios().add(municipio);
+        dataset.addMunicipio(municipio);
     }
 
-
+    @Override
     public void removeRow (int i){
         Municipio municipio = new Municipio((int)getValueAt(i, 0), (String)getValueAt(i, 1), (int)getValueAt(i, 2), (String)getValueAt(i, 3), (String)getValueAt(i, 4));
         dataset.removeMunicipio(municipio);
+        System.out.println("borrado");
         super.removeRow(i);
         ArrayList<Municipio> arratMunicipios = (ArrayList<Municipio>) dataset.getListaMunicipios();
         arratMunicipios.remove(i-1);
     }
     public void removePackRow (int[] i,int ini){
-        super.removeRow(i[ini]);
+        this.removeRow(i[ini]);
         if(i[ini] == i[i.length-1]){return;}
         for (int k = ini+1; k < i.length; k++){
-
             if (i[k] > i[ini]){i[k]--;}
-
         }
         removePackRow(i, ini++);
     }
     public void removePackRow (int[] i){
-        super.removeRow(i[0]);
+        this.removeRow(i[0]);
         if(i[0] == i[i.length-1]){return;}
         for (int k = 0+1; k < i.length; k++){
-
             if (i[k] > i[0]){i[k]--;}
-
         }
         removePackRow(i, 1);
     }
@@ -120,11 +118,11 @@ public class Model extends DefaultTableModel implements TablaModel {
     public void removeAll(){
         try{
             while (getRowCount()!=1) {
-                this.removeRow(1);
+                super.removeRow(1);
             }
-            this.removeRow(0);
+            super.removeRow(0);
         }catch(java.lang.IndexOutOfBoundsException e){
-            System.err.println("Ha terminado de borrar");
+            //System.err.println("Ha terminado de borrar");
         }
     }
 
@@ -133,4 +131,6 @@ public class Model extends DefaultTableModel implements TablaModel {
         // TODO Auto-generated method stub
         throw new UnsupportedOperationException("Unimplemented method 'isCellEditable'");
     }
+
+
 }

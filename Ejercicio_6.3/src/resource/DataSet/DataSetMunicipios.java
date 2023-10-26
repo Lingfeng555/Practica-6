@@ -147,4 +147,8 @@ public class DataSetMunicipios {
 		municipiosHashTable.get(municipio.getAutonomia()).get(municipio.getProvincia()).remove(municipio);
 		municipiosHashTableForTree.get(municipio.getAutonomia()).get(municipio.getProvincia()).remove(municipio.getNombre());
 	}
+	
+	public void addMunicipio(Municipio municipio){
+		addToHashMap(municipio);
+	}
 }

@@ -27,6 +27,7 @@ public class MunicipiosTree extends JTree {
                 String[] nodeName = getNodeNameByPath(e);
                 TreeSet<Municipio> municipios = getMunicipiosInNode(nodeName);
                 parent.getPanelTablaDatos().changeTable(municipios);
+                parent.getSuperiorLabel().setText(String.join("/", nodeName));
             }
         });
     }

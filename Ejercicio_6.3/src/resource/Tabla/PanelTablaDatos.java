@@ -100,6 +100,8 @@ public class PanelTablaDatos extends JPanel{
             model.removePackRow(indexes);
         }catch(java.lang.ArrayIndexOutOfBoundsException e){
             System.err.println("No hay nada que borrar");
+        }catch(java.lang.IndexOutOfBoundsException e1){
+            System.err.println("Borrado primer elemento");
         }
     }
 
@@ -111,8 +113,22 @@ public class PanelTablaDatos extends JPanel{
     }
 
     private void anadir() {
-        Object[] newRow = {0, null, 0, null, null};
-        model.addRow(newRow);
+        String[] rootPath = parent.getSuperiorLabel().getText().split("/");
+
+        switch (rootPath.length) {
+            case 4:
+                Object[] enMunicipio = {0, rootPath[0], 50000, rootPath[1], rootPath[2]};
+                model.addRow(enMunicipio);
+                return;
+            case 3:
+                Object[] enProvincia = {0, "", 50000, rootPath[0], rootPath[1]};
+                model.addRow(enProvincia);
+                return;
+            case 2:
+                Object[] enAutonomia = {0, "", 50000, "", rootPath[0]};
+                model.addRow(enAutonomia);
+                return;
+        }
     }
     private void anadir(Municipio municipio) {
         Object[] newRow = {municipio.getCodigo(), municipio.getNombre(), municipio.getHabitantes(), municipio.getProvincia(), municipio.getAutonomia()};
@@ -250,7 +266,7 @@ public class PanelTablaDatos extends JPanel{
     }
 
     public void changeTable(TreeSet<Municipio> municipios){
-        System.out.println("Parapapapa");
+        //System.out.println("Parapapapa");
         model.removeAll();
         anadirMunicipios(municipios);
         table.repaint();
