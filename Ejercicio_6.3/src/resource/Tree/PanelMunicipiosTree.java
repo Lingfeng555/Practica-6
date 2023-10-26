@@ -2,10 +2,13 @@ package resource.Tree;
 
 import javax.swing.JScrollPane;
 
-public class PanelMunicipiosTree extends JScrollPane{
-    private static MunicipiosTree municipiosTree = new MunicipiosTree();
+import resource.VentanaTree;
 
-    public PanelMunicipiosTree (){
-        super(municipiosTree);
+public class PanelMunicipiosTree extends JScrollPane{
+    private static MunicipiosTree municipiosTree;
+    private VentanaTree parent;
+    public PanelMunicipiosTree (VentanaTree ventanaTree){
+        super(municipiosTree = new MunicipiosTree(ventanaTree));
+        parent = ventanaTree;
     }
 }

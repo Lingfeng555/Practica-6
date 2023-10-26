@@ -19,8 +19,8 @@ public class VentanaTree extends JFrame {
         this.setDefaultCloseOperation(EXIT_ON_CLOSE);
         this.setLayout(new BorderLayout());
 
-        this.panelMunicipiosTree = new PanelMunicipiosTree();
-        this.panelTablaDatos = new PanelTablaDatos();
+        this.panelMunicipiosTree = new PanelMunicipiosTree(this);
+        this.panelTablaDatos = new PanelTablaDatos(this);
         this.add(panelMunicipiosTree, BorderLayout.WEST);
         this.add(panelTablaDatos, BorderLayout.CENTER);
 
@@ -30,4 +30,17 @@ public class VentanaTree extends JFrame {
 
         this.setVisible(true);
     }
+
+    public PanelTablaDatos getPanelTablaDatos() {
+        return panelTablaDatos;
+    }
+
+    public PanelMunicipiosTree getPanelMunicipiosTree() {
+        return panelMunicipiosTree;
+    }
+
+    public JLabel getSuperiorLabel() {
+        return superiorLabel;
+    }
+
 }

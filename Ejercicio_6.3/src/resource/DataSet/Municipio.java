@@ -1,7 +1,7 @@
 package resource.DataSet;
 /** Permite crear objetos municipio con información de población, provincia y comunidad autónoma
  */
-public class Municipio {
+public class Municipio implements Comparable {
 	private int codigo;
 	private String nombre;
 	private int habitantes;
@@ -122,6 +122,12 @@ public class Municipio {
 		} else if (!autonomia.equals(other.autonomia))
 			return false;
 		return true;
+	}
+
+	@Override
+	public int compareTo(Object o) {
+		Municipio municipio = (Municipio)o;
+		return this.nombre.compareTo(municipio.getNombre());
 	}
 	
 }

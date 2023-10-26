@@ -17,7 +17,7 @@ public class Model extends DefaultTableModel implements TablaModel {
         addTableModelListener(new TableModelListener() {
             @Override
             public void tableChanged(TableModelEvent e) {
-                System.out.println("Ha cambiado la table UwU");
+                //System.out.println("Ha cambiado la table UwU");
             }
         });
     }
@@ -46,10 +46,11 @@ public class Model extends DefaultTableModel implements TablaModel {
         throw new UnsupportedOperationException("Unimplemented method 'setValueAt'");
     }
     @Override
-    public boolean isCellEditable() {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'isCellEditable'");
+    public boolean isCellEditable(int row, int column) {
+        //System.out.println("adjh");
+        return column == 1 || column==2 ? true : false;
     }
+    
     @Override
     public void setValueAt(Object valeuObject,int i, int j) {
         super.setValueAt(valeuObject, i, j);
@@ -79,7 +80,18 @@ public class Model extends DefaultTableModel implements TablaModel {
         // TODO Auto-generated method stub
         throw new UnsupportedOperationException("Unimplemented method 'removeTablaModelListener'");
     }
+    
+    @Override
+    public void addRow(Object[] o){
+        Municipio municipio = new Municipio((int)o[0], (String)o[1], (int)o[2], (String)o[3], (String)o[4]);
+        super.addRow(o);
+        dataset.getListaMunicipios().add(municipio);
+    }
+
+
     public void removeRow (int i){
+        Municipio municipio = new Municipio((int)getValueAt(i, 0), (String)getValueAt(i, 1), (int)getValueAt(i, 2), (String)getValueAt(i, 3), (String)getValueAt(i, 4));
+        dataset.removeMunicipio(municipio);
         super.removeRow(i);
         ArrayList<Municipio> arratMunicipios = (ArrayList<Municipio>) dataset.getListaMunicipios();
         arratMunicipios.remove(i-1);
@@ -103,5 +115,22 @@ public class Model extends DefaultTableModel implements TablaModel {
 
         }
         removePackRow(i, 1);
+    }
+
+    public void removeAll(){
+        try{
+            while (getRowCount()!=1) {
+                this.removeRow(1);
+            }
+            this.removeRow(0);
+        }catch(java.lang.IndexOutOfBoundsException e){
+            System.err.println("Ha terminado de borrar");
+        }
+    }
+
+    @Override
+    public boolean isCellEditable() {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'isCellEditable'");
     }
 }

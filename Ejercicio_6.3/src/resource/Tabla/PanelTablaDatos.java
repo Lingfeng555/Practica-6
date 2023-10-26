@@ -4,9 +4,15 @@ import java.awt.BorderLayout;
 import java.awt.Color;
 import java.awt.Component;
 import java.awt.FlowLayout;
+import java.awt.List;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseListener;
+import java.beans.PropertyChangeEvent;
+import java.beans.PropertyChangeListener;
 import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.ListIterator;
+import java.util.TreeSet;
 
 import javax.swing.JButton;
 import javax.swing.JPanel;
@@ -16,6 +22,7 @@ import javax.swing.JTable;
 import javax.swing.table.DefaultTableCellRenderer;
 import javax.swing.table.TableCellRenderer;
 
+import resource.VentanaTree;
 import resource.DataSet.DataSetMunicipios;
 import resource.DataSet.Municipio;
 
@@ -28,7 +35,10 @@ public class PanelTablaDatos extends JPanel{
     private JButton borrar;
     private JButton orden;
 
-    public PanelTablaDatos (){
+    private VentanaTree parent;
+
+    public PanelTablaDatos (VentanaTree ventanaTree){
+        parent = ventanaTree;
 
         this.setLayout(new BorderLayout());
 
@@ -36,6 +46,7 @@ public class PanelTablaDatos extends JPanel{
         buttonPanel.add(setAnadirButton());
         buttonPanel.add(setBorrarButton());
         buttonPanel.add(setOrdenButton());
+        setModel(DataSetMunicipios.getDataSetMunicipios());
         setTable(DataSetMunicipios.getDataSetMunicipios());
         scrollPane = new JScrollPane(table);
         
@@ -59,15 +70,19 @@ public class PanelTablaDatos extends JPanel{
         this.model = new Model(lMunicipios, fields, municipios);
     }
 
-        private void setModel(ArrayList<Municipio> arrayMunicipios){
+    private void setModel(TreeSet<Municipio> municipios){
         Object[] fields = {"ID", "Municipio", "Poblacion", "Provincia", "Comunidad Autonoma"};
-        Object[][] lMunicipios = new Object[arrayMunicipios.size()][5];
-        for (int i = 0; i<arrayMunicipios.size(); i++){
-            lMunicipios[i][0] = arrayMunicipios.get(i).getCodigo();
-            lMunicipios[i][1] = arrayMunicipios.get(i).getNombre();
-            lMunicipios[i][2] = arrayMunicipios.get(i).getHabitantes();
-            lMunicipios[i][3] = arrayMunicipios.get(i).getProvincia();
-            lMunicipios[i][4] = arrayMunicipios.get(i).getAutonomia();
+        Object[][] lMunicipios = new Object[municipios.size()][5];
+        Iterator<Municipio> iterator = municipios.iterator();
+        int i = 0;
+        Municipio municipio = iterator.next();
+        while (iterator.hasNext()) {
+            lMunicipios[i][0] = municipio.getCodigo();
+            lMunicipios[i][1] = municipio.getNombre();
+            lMunicipios[i][2] = municipio.getHabitantes();
+            lMunicipios[i][3] = municipio.getProvincia();
+            lMunicipios[i][4] = municipio.getAutonomia();
+            municipio = iterator.next();
         }
         this.model = new Model(lMunicipios, fields, DataSetMunicipios.getDataSetMunicipios());
     }
@@ -96,12 +111,18 @@ public class PanelTablaDatos extends JPanel{
     }
 
     private void anadir() {
-        //model.addRow(new Object[model.getColumCount()]);
-        System.out.println("JAJA no funcioooona");
+        Object[] newRow = {0, null, 0, null, null};
+        model.addRow(newRow);
+    }
+    private void anadir(Municipio municipio) {
+        Object[] newRow = {municipio.getCodigo(), municipio.getNombre(), municipio.getHabitantes(), municipio.getProvincia(), municipio.getAutonomia()};
+        model.addRow(newRow);
+    }
+    private void anadirMunicipios(TreeSet<Municipio> municipios){
+        for(Municipio municipio: municipios) anadir(municipio);
     }
 
     private JTable setTable(DataSetMunicipios municipios){
-        setModel(municipios);
         table = new JTable(model);
         table.getColumnModel().getColumn(0).setMaxWidth(50);
         table.getColumnModel().getColumn(2).setMaxWidth(150);
@@ -110,7 +131,7 @@ public class PanelTablaDatos extends JPanel{
             @Override
             public Component getTableCellRendererComponent(JTable table, Object value, boolean isSelected,
                     boolean hasFocus, int row, int column) {
-                JProgressBar progressBar = new JProgressBar(0, 5000000);
+                JProgressBar progressBar = new JProgressBar(50000, 5000000);
                 try{
                     progressBar.setValue((Integer)value);  //Al inicio ya ha sido casteado de int a Objeto
                 }catch(java.lang.ClassCastException e){
@@ -119,10 +140,17 @@ public class PanelTablaDatos extends JPanel{
                 progressBar.setToolTipText(String.valueOf(progressBar.getValue()));
                 progressBar.setString(String.valueOf(progressBar.getValue()));
                 progressBar.setStringPainted(true);
+
+                int newRedValue = (int) Math.round( (255 * ((int)value)) / 5000000);
+                //System.out.println(newRedValue);
+                Color newColor = new Color(newRedValue, 0, 0);
+
+                progressBar.setBackground(newColor);
                 return progressBar;
             }
             
-        }); 
+        });
+
 
         table.addMouseListener(new MouseListener() {
 
@@ -134,6 +162,8 @@ public class PanelTablaDatos extends JPanel{
                 if(table.getColumnName(j).equalsIgnoreCase("Comunidad Autonoma")){
                     changeColumn(j, (String)table.getValueAt(i, j));
                 }
+                mayorMenor((int)table.getModel().getValueAt(i, 2));
+                //System.out.println((int)table.getModel().getValueAt(i, 2));
             }
 
             @Override
@@ -157,12 +187,7 @@ public class PanelTablaDatos extends JPanel{
             }
             
         });
-
         return table;
-    }
-
-    private void setTableMunicipios(ArrayList<Municipio> municipios){
-        setModel(municipios);
     }
 
     public void changeColumn(int column_index, String nombre){
@@ -188,13 +213,30 @@ public class PanelTablaDatos extends JPanel{
         table.getColumnModel().getColumn(column_index).setCellRenderer(new DefaultTableCellRenderer() {
             @Override
             public Component getTableCellRendererComponent(JTable table, Object value, boolean isSelected,
-                    boolean hasFocus, int row, int column) {
+                boolean hasFocus, int row, int column) {
                 Component component = super.getTableCellRendererComponent(table, value, isSelected, hasFocus, row, column);
                 component.setBackground(Color.WHITE);
                 return component;
             }
         });
         table.repaint();
+    }
+
+    public void mayorMenor (int comparator){
+        table.getColumnModel().getColumn(1).setCellRenderer(new DefaultTableCellRenderer(){
+            @Override
+            public Component getTableCellRendererComponent(JTable table, Object value, boolean isSelected,
+                boolean hasFocus, int row, int column) {
+                Component component = super.getTableCellRendererComponent(table, value, isSelected, hasFocus, row, column);
+                if((int)table.getValueAt(row, 2) > comparator){
+                    component.setForeground(Color.RED);
+                }else{  
+                    component.setForeground(Color.GREEN);
+                }
+                return component;
+            }
+        });
+
     }
 
     private JButton setOrdenButton(){
@@ -205,5 +247,12 @@ public class PanelTablaDatos extends JPanel{
 
     private void Ordenar() {
         System.out.println("JAJA no ordenaaaaaaa");
+    }
+
+    public void changeTable(TreeSet<Municipio> municipios){
+        System.out.println("Parapapapa");
+        model.removeAll();
+        anadirMunicipios(municipios);
+        table.repaint();
     }
 }
