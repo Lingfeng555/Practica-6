@@ -89,7 +89,6 @@ public class EstadisticaPanel extends JPanel{
         if(name == null){ return;}
         parent.getPanelMunicipiosTree();
         TreeSet<Municipio> municipios = PanelMunicipiosTree.getMunicipiosTree().getMunicipiosInNode(name);
-
         int y = posicionY; 
         for(Municipio municipio: municipios){
             int proporcionDeMunicipio = getMunicipioBarraTamaño(municipio.getHabitantes());
