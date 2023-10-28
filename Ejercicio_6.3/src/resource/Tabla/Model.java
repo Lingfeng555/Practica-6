@@ -50,6 +50,8 @@ public class Model extends DefaultTableModel implements TablaModel {
     public void setValueAt(Object valeuObject,int i, int j) {
         super.setValueAt(valeuObject, i, j);
         Municipio municipio = new Municipio((int)getValueAt(i, 0), (String)getValueAt(i, 1), (int)getValueAt(i, 2), (String)getValueAt(i, 3), (String)getValueAt(i, 4));
+        ArrayList<Municipio> arratMunicipios = (ArrayList<Municipio>) dataset.getListaMunicipios();
+        arratMunicipios.remove(i-1);
         dataset.removeMunicipio(municipio);
         switch (j) {
             case 1:

@@ -39,9 +39,7 @@ public class PanelTablaDatos extends JPanel{
 
     public PanelTablaDatos (VentanaTree ventanaTree){
         parent = ventanaTree;
-
         this.setLayout(new BorderLayout());
-
         JPanel buttonPanel = new JPanel(new FlowLayout());
         buttonPanel.add(setAnadirButton());
         buttonPanel.add(setBorrarButton());
@@ -49,10 +47,8 @@ public class PanelTablaDatos extends JPanel{
         setModel(DataSetMunicipios.getDataSetMunicipios());
         setTable(DataSetMunicipios.getDataSetMunicipios());
         scrollPane = new JScrollPane(table);
-        
         this.add(buttonPanel, BorderLayout.SOUTH);
         this.add(scrollPane, BorderLayout.CENTER);
-
         this.setVisible(true);
     }
 

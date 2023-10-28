@@ -28,6 +28,7 @@ public class MunicipiosTree extends JTree {
                 TreeSet<Municipio> municipios = getMunicipiosInNode(nodeName);
                 parent.getPanelTablaDatos().changeTable(municipios);
                 parent.getSuperiorLabel().setText(String.join("/", nodeName));
+                parent.getPanelEstadistica().ActualizarBarras();
             }
         });
     }
@@ -44,9 +45,8 @@ public class MunicipiosTree extends JTree {
         return(  names );
     }
 
-    private TreeSet<Municipio> getMunicipiosInNode(String[] name){
+    public TreeSet<Municipio> getMunicipiosInNode(String[] name){
         DataSetMunicipios dataset = DataSetMunicipios.getDataSetMunicipios();
-
         switch (name.length) {
             case 4:
                 //System.out.println(dataset.getHashTableForTree());

@@ -9,6 +9,8 @@ public class DataSetMunicipios {
 	private List<Municipio> lMunicipios = new ArrayList<Municipio>();
 	private static Hashtable<String, Hashtable<String, TreeSet<Municipio>>> municipiosHashTable;
 	private static Hashtable<String, Hashtable<String, Hashtable<String, Municipio>>> municipiosHashTableForTree;
+	private int poblacionTotal = 0;
+
 	/** Crea un nuevo dataset de municipios, cargando los datos desde el fichero indicado
 	 * @param nombreFichero	Nombre de fichero o recurso en formato de texto. En cada línea debe incluir los datos de un municipio <br>
 	 * separados por tabulador: código nombre habitantes provincia autonomía
@@ -98,6 +100,7 @@ public class DataSetMunicipios {
 		} catch (Exception e) {
 			//e.printStackTrace();
 		}
+		System.out.println (poblacionTotal);
 	}
 
 	private String removeSpaces(String str){
@@ -121,6 +124,7 @@ public class DataSetMunicipios {
 		}
 		municipiosHashTable.get(municipio.getAutonomia()).get(municipio.getProvincia()).add(municipio);
 		municipiosHashTableForTree.get(municipio.getAutonomia()).get(municipio.getProvincia()).put(municipio.getNombre(), municipio);
+		addToPoblacionTotal(municipio.getHabitantes());
 	}
 	
 	public Hashtable<String, Hashtable<String, TreeSet<Municipio>>> getmunicipiosHashTable(){
@@ -146,9 +150,39 @@ public class DataSetMunicipios {
 	public void removeMunicipio(Municipio municipio){
 		municipiosHashTable.get(municipio.getAutonomia()).get(municipio.getProvincia()).remove(municipio);
 		municipiosHashTableForTree.get(municipio.getAutonomia()).get(municipio.getProvincia()).remove(municipio.getNombre());
+		poblacionTotal -= municipio.getHabitantes();
 	}
 	
 	public void addMunicipio(Municipio municipio){
 		addToHashMap(municipio);
 	}
+
+	public int getPoblacionTotal() {
+		//System.out.println("Devolviendo poblacionTotal de España: " + poblacionTotal);
+		return poblacionTotal;
+	}
+
+	public int getAutonomiaPoblacion(String autonomiaNombre){
+		int result = 0;
+		for(String provinciaNombre: municipiosHashTable.get(autonomiaNombre).keySet()){
+			for(Municipio municipio: municipiosHashTable.get(autonomiaNombre).get(provinciaNombre)){
+				result+= municipio.getHabitantes();
+			}
+		}
+		return result;
+	}
+
+	public int getProvinciaPoblacion(String autonomiaNombre, String provinciaNombre){
+		System.out.println("De la autonomia: "+ autonomiaNombre + "; en la provincia: " +provinciaNombre);
+		int result = 0;
+		for(Municipio municipio: municipiosHashTable.get(autonomiaNombre).get(provinciaNombre)){
+			result+=municipio.getHabitantes();
+		}
+		return result;
+	}
+
+	public void addToPoblacionTotal(int poblacion){
+		this.poblacionTotal += poblacion;
+	}
+
 }

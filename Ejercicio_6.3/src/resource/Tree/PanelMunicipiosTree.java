@@ -11,4 +11,7 @@ public class PanelMunicipiosTree extends JScrollPane{
         super(municipiosTree = new MunicipiosTree(ventanaTree));
         parent = ventanaTree;
     }
+    public static MunicipiosTree getMunicipiosTree() {
+        return municipiosTree;
+    }
 }

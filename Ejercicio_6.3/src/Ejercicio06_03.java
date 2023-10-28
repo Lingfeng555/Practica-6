@@ -34,6 +34,7 @@ public class Ejercicio06_03 {
 		ventana.setVisible(false);
 		try {
 			dataset = new DataSetMunicipios( "Ejercicio_6.3/src/Datos/DatosMunicipios.csv" );
+			//System.out.println(dataset.getPoblacionTotal());
 			new VentanaTree();
 			// TODO Resolver el ejercicio 6.3
 		} catch (IOException e) {
