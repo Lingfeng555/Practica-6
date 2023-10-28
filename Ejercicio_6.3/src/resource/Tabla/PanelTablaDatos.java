@@ -10,6 +10,7 @@ import java.awt.event.MouseListener;
 import java.beans.PropertyChangeEvent;
 import java.beans.PropertyChangeListener;
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.Iterator;
 import java.util.ListIterator;
 import java.util.TreeSet;
@@ -258,11 +259,10 @@ public class PanelTablaDatos extends JPanel{
     }
 
     private void Ordenar() {
-        System.out.println("JAJA no ordenaaaaaaa");
+        Collections.sort(DataSetMunicipios.getDataSetMunicipios().getListaMunicipios());
     }
 
     public void changeTable(TreeSet<Municipio> municipios){
-        //System.out.println("Parapapapa");
         model.removeAll();
         anadirMunicipios(municipios);
         table.repaint();
