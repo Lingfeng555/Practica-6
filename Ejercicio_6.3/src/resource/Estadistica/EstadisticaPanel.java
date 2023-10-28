@@ -48,7 +48,7 @@ public class EstadisticaPanel extends JPanel{
         graphics2d.drawString("Total España", posicionX, posicionY-5);
         graphics2d.fillRect(posicionX, posicionY, anchuraDebarras, tamañoPoblacionEstado);
 
-        if(currentNodePath == null){return;}
+        if(currentNodePath == null)return;
         graphics2d.drawString(currentNodePath[0], posicionXComparador, posicionYComparador-5);
         drawBarraComparador(graphics2d, posicionXComparador, posicionYComparador, anchuraDebarras, getBarraComparadorTamaño(currentNodePath), currentNodePath);
     }
@@ -89,6 +89,7 @@ public class EstadisticaPanel extends JPanel{
         if(name == null){ return;}
         parent.getPanelMunicipiosTree();
         TreeSet<Municipio> municipios = PanelMunicipiosTree.getMunicipiosTree().getMunicipiosInNode(name);
+
         int y = posicionY; 
         for(Municipio municipio: municipios){
             int proporcionDeMunicipio = getMunicipioBarraTamaño(municipio.getHabitantes());
