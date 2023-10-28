@@ -154,8 +154,12 @@ public class PanelTablaDatos extends JPanel{
                 progressBar.setToolTipText(String.valueOf(progressBar.getValue()));
                 //progressBar.setString(String.valueOf(progressBar.getValue()));
                 progressBar.setStringPainted(true);
-
-                int newRedValue = (int) Math.round( (255 * ((int)value)) / 5000000);
+                int newRedValue = 0;
+                try {
+                    newRedValue = (int) Math.round( (255 * ((int)value)) / 5000000);
+                } catch (java.lang.ClassCastException stringException) {
+                    newRedValue = (int) Math.round( (255 * (Integer.valueOf((String)value))) / 5000000);
+                }
                 //System.out.println(newRedValue);
                 Color newColor = new Color(newRedValue, 0, 0);
                 progressBar.setBackground(newColor);
@@ -174,8 +178,11 @@ public class PanelTablaDatos extends JPanel{
                 if(table.getColumnName(j).equalsIgnoreCase("Comunidad Autonoma")){
                     changeColumn(j, (String)table.getValueAt(i, j));
                 }
-                mayorMenor((int)table.getModel().getValueAt(i, 2));
-                //System.out.println((int)table.getModel().getValueAt(i, 2));
+                try{
+                    mayorMenor((int)table.getModel().getValueAt(i, 2));
+                }catch(java.lang.ClassCastException stringException){
+                    mayorMenor(Integer.valueOf((String)table.getModel().getValueAt(i, 2)));
+                }
             }
 
             @Override
@@ -241,7 +248,14 @@ public class PanelTablaDatos extends JPanel{
             public Component getTableCellRendererComponent(JTable table, Object value, boolean isSelected,
                 boolean hasFocus, int row, int column) {
                 Component component = super.getTableCellRendererComponent(table, value, isSelected, hasFocus, row, column);
-                if((int)table.getValueAt(row, 2) > comparator){
+                int selectedValue = 0;
+                try {
+                    selectedValue = (int)table.getValueAt(row, 2);
+                } catch (Exception e) {
+                    selectedValue = Integer.valueOf((String)table.getValueAt(row, 2));
+                }
+
+                if(selectedValue > comparator){
                     component.setForeground(Color.RED);
                 }else{  
                     component.setForeground(Color.GREEN);
@@ -249,7 +263,7 @@ public class PanelTablaDatos extends JPanel{
                 return component;
             }
         });
-
+        super.repaint();
     }
 
     private JButton setOrdenButton(){

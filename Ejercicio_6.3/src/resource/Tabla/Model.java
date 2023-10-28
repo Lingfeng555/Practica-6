@@ -49,7 +49,12 @@ public class Model extends DefaultTableModel implements TablaModel {
     @Override
     public void setValueAt(Object valeuObject,int i, int j) {
         super.setValueAt(valeuObject, i, j);
-        Municipio municipio = new Municipio((int)getValueAt(i, 0), (String)getValueAt(i, 1), (int)getValueAt(i, 2), (String)getValueAt(i, 3), (String)getValueAt(i, 4));
+        Municipio municipio;
+        try{
+            municipio = new Municipio((int)getValueAt(i, 0), (String)getValueAt(i, 1), (int)getValueAt(i, 2), (String)getValueAt(i, 3), (String)getValueAt(i, 4));
+        }catch(java.lang.ClassCastException e){
+            municipio = new Municipio((int)getValueAt(i, 0), (String)getValueAt(i, 1), Integer.valueOf((String)getValueAt(i, 2)), (String)getValueAt(i, 3), (String)getValueAt(i, 4));
+        }
         ArrayList<Municipio> arratMunicipios = (ArrayList<Municipio>) dataset.getListaMunicipios();
         arratMunicipios.remove(i-1);
         dataset.removeMunicipio(municipio);
@@ -58,7 +63,11 @@ public class Model extends DefaultTableModel implements TablaModel {
                 municipio.setNombre((String)valeuObject);
                 break;
             case 2:
-                municipio.setHabitantes((int) valeuObject);
+                try {
+                    municipio.setHabitantes((int) valeuObject);
+                } catch (java.lang.ClassCastException e) {
+                    municipio.setHabitantes(Integer.valueOf((String)valeuObject));
+                }
                 break;
         }
         dataset.addMunicipio(municipio);
