@@ -45,10 +45,12 @@ public class EstadisticaPanel extends JPanel{
         int posicionXComparador = posicionX+200;
         int posicionYComparador = this.getPreferredSize().height - getBarraComparadorTamaño(currentNodePath);
         
+        graphics2d.drawString("Total España", posicionX, posicionY-5);
         graphics2d.fillRect(posicionX, posicionY, anchuraDebarras, tamañoPoblacionEstado);
 
+        if(currentNodePath == null){return;}
+        graphics2d.drawString(currentNodePath[0], posicionXComparador, posicionYComparador-5);
         drawBarraComparador(graphics2d, posicionXComparador, posicionYComparador, anchuraDebarras, getBarraComparadorTamaño(currentNodePath), currentNodePath);
-
     }
 
     public void ActualizarBarras(){
