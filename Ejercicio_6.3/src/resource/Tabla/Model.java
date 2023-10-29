@@ -7,13 +7,14 @@ import javax.swing.table.DefaultTableModel;
 
 import resource.DataSet.DataSetMunicipios;
 import resource.DataSet.Municipio;
+import resource.Tree.PanelMunicipiosTree;
 public class Model extends DefaultTableModel implements TablaModel {
     private DataSetMunicipios dataset;
-
-    public Model(Object[][] data, Object[] row, DataSetMunicipios dataset){
+    private PanelTablaDatos parent;
+    public Model(Object[][] data, Object[] row, DataSetMunicipios dataset, PanelTablaDatos parent){
         super(data, row);
         this.dataset = dataset;
-
+        this.parent = parent;
         addTableModelListener(new TableModelListener() {
             @Override
             public void tableChanged(TableModelEvent e) {
@@ -72,6 +73,7 @@ public class Model extends DefaultTableModel implements TablaModel {
         }
         dataset.addMunicipio(municipio);
         if (municipio.isEmpty()){removeRow(i);}
+        parent.repaint();
     }
     @Override
     public void removeTablaModelListener() {

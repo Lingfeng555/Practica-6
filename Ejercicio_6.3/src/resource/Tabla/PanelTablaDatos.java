@@ -64,7 +64,7 @@ public class PanelTablaDatos extends JPanel{
             lMunicipios[i][3] = arrayMunicipios.get(i).getProvincia();
             lMunicipios[i][4] = arrayMunicipios.get(i).getAutonomia();
         }
-        this.model = new Model(lMunicipios, fields, municipios);
+        this.model = new Model(lMunicipios, fields, municipios, this);
     }
 
     private void setModel(TreeSet<Municipio> municipios){
@@ -81,7 +81,7 @@ public class PanelTablaDatos extends JPanel{
             lMunicipios[i][4] = municipio.getAutonomia();
             municipio = iterator.next();
         }
-        this.model = new Model(lMunicipios, fields, DataSetMunicipios.getDataSetMunicipios());
+        this.model = new Model(lMunicipios, fields, DataSetMunicipios.getDataSetMunicipios(), this);
     }
     
     private JButton setBorrarButton(){
@@ -141,7 +141,6 @@ public class PanelTablaDatos extends JPanel{
         table.getColumnModel().getColumn(2).setMaxWidth(150);
         table.getColumnModel().getColumn(2).setMaxWidth(150);
         table.getColumnModel().getColumn(2).setCellRenderer(new TableCellRenderer() {
-
             @Override
             public Component getTableCellRendererComponent(JTable table, Object value, boolean isSelected,
                     boolean hasFocus, int row, int column) {
@@ -163,13 +162,11 @@ public class PanelTablaDatos extends JPanel{
                 //System.out.println(newRedValue);
                 Color newColor = new Color(newRedValue, 0, 0);
                 progressBar.setBackground(newColor);
+                progressBar.setEnabled(true);
                 return progressBar;
             }
         });
-
-
         table.addMouseListener(new MouseListener() {
-
             @Override
             public void mouseClicked(MouseEvent e) {
                 int i = table.getSelectedRow();
@@ -206,10 +203,15 @@ public class PanelTablaDatos extends JPanel{
             }
             
         });
-
+        var reference = this;
+        table.addPropertyChangeListener(new PropertyChangeListener() {
+            @Override
+            public void propertyChange(PropertyChangeEvent evt) {
+                reference.repaint();
+            }
+        });
         return table;
     }
-
     public void changeColumn(int column_index, String nombre){
         System.out.println(nombre);
         table.getColumnModel().getColumn(column_index).setCellRenderer(new DefaultTableCellRenderer() {
@@ -269,6 +271,7 @@ public class PanelTablaDatos extends JPanel{
     private JButton setOrdenButton(){
         this.orden = new JButton("Ordenar");
         orden.addActionListener(e -> Ordenar());
+        parent.repaint();
         return orden;
     }
 
