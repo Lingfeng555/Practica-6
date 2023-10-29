@@ -151,7 +151,6 @@ public class PanelTablaDatos extends JPanel{
                     progressBar.setValue(Integer.parseInt((String)value));  //Cuando lo modificas swing lo toma como string y si salta el error es por eso
                 }
                 progressBar.setToolTipText(String.valueOf(progressBar.getValue()));
-                //progressBar.setString(String.valueOf(progressBar.getValue()));
                 progressBar.setStringPainted(true);
                 int newRedValue = 0;
                 try {
@@ -159,10 +158,9 @@ public class PanelTablaDatos extends JPanel{
                 } catch (java.lang.ClassCastException stringException) {
                     newRedValue = (int) Math.round( (255 * (Integer.valueOf((String)value))) / 5000000);
                 }
-                //System.out.println(newRedValue);
                 Color newColor = new Color(newRedValue, 0, 0);
                 progressBar.setBackground(newColor);
-                progressBar.setEnabled(true);
+                //progressBar.setEnabled(true);
                 return progressBar;
             }
         });
@@ -283,5 +281,11 @@ public class PanelTablaDatos extends JPanel{
         model.removeAll();
         anadirMunicipios(municipios);
         table.repaint();
+    }
+
+    @Override
+    public void repaint(){
+        this.revalidate();
+        super.repaint();
     }
 }
